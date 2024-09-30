@@ -24,7 +24,7 @@ if (function_exists('acf_add_options_page')) {
 // Register post types
 function register_custom_post_types()
 {
-    $post_types = ["job", "workshop"];
+    $post_types = ["job", "project", "workshop"];
     foreach ($post_types as $post_type) {
         include_once(__DIR__ . '/post-types/' . $post_type . '.php');
     }
@@ -32,10 +32,7 @@ function register_custom_post_types()
 add_action('init', 'register_custom_post_types');
 
 // Register taxonomies
-function register_custom_taxonomy()
-{
-    
-}
+function register_custom_taxonomy() {}
 add_action('init', 'register_custom_taxonomy');
 
 /* BLOCK(S)

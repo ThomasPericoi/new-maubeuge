@@ -30,10 +30,6 @@ add_theme_support(
 add_theme_support('disable-custom-colors');
 add_theme_support('disable-custom-font-sizes');
 
-@ini_set('upload_max_size', '64M');
-@ini_set('post_max_size', '64M');
-@ini_set('max_execution_time', '300');
-
 // Disable emojis
 function disable_emojis()
 {
@@ -108,7 +104,7 @@ function register_menus()
             'footer-menu-1' => __('Pied de page 1', 'new-maubeuge'),
             'footer-menu-2' => __('Pied de page 2', 'new-maubeuge'),
             'footer-menu-3' => __('Pied de page 3', 'new-maubeuge'),
-            'footer-menu-3' => __('Sous-pied de page', 'new-maubeuge'),
+            'footer-submenu' => __('Sous-pied de page', 'new-maubeuge'),
         )
     );
 }
@@ -136,7 +132,8 @@ if (class_exists('ACF')) {
     }
 }
 
-function my_wp_nav_menu_objects($items, $args)
+// Add ACF icon to menu item
+function add_acf_icon_menu($items, $args)
 {
     foreach ($items as &$item) {
         $icon = get_field('icon', $item);
@@ -146,7 +143,7 @@ function my_wp_nav_menu_objects($items, $args)
     }
     return $items;
 }
-add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+add_filter('wp_nav_menu_objects', 'add_acf_icon_menu', 10, 2);
 
 /* INCLUDES
 --------------------------------------------------------------- */

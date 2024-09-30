@@ -1,2 +1,137 @@
 /* #Footer
 --------------------------------------------------------------- */
+#footer {
+    background-color: var(--selago);
+}
+
+#footer a:not(.btn) {
+    text-decoration: none;
+}
+
+/* Main Footer */
+#main-footer {
+    padding: var(--spacing-section-inner) 0;
+}
+
+#main-footer>.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-section-inner);
+}
+
+@media screen and (min-width: 1200px) {
+    #main-footer>.container {
+        flex-direction: row;
+    }
+}
+
+#main-footer .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#main-footer .informations .custom-logo {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#main-footer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#main-footer .social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    transition: background-color ease 350ms;
+}
+
+#main-footer .social:hover,
+#main-footer .social:focus {
+    background-color: var(--black);
+}
+
+#main-footer .social>svg {
+    max-width: 20px;
+    width: 100%;
+    max-height: 25px;
+    height: auto;
+    display: block;
+    transition: filter ease 350ms;
+}
+
+#main-footer .social:hover>svg,
+#main-footer .social:focus>svg {
+    filter: brightness(0) invert(1);
+}
+
+#main-footer .menu-footer .title {
+    margin-bottom: 1rem;
+}
+
+#main-footer .menu-footer .title {
+    margin-bottom: 1rem;
+}
+
+#main-footer .menu-footer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#main-footer .menu-footer a {
+    color: var(--primary);
+    font-size: 14px;
+    transition: color ease 350ms;
+}
+
+#main-footer .menu-footer a:hover,
+#main-footer .menu-footer a:focus {
+    color: var(--secondary);
+}
+
+/* Subfooter */
+#subfooter {
+    padding: 24px 0;
+    background-color: var(--black);
+}
+
+#subfooter a {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+#subfooter a:hover,
+#subfooter a:focus {
+    text-decoration: underline;
+}
+
+#subfooter .menu-footer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    #subfooter .menu-footer>ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 2.5rem;
+        flex-wrap: wrap;
+    }
+}

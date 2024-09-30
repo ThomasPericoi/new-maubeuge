@@ -4,11 +4,15 @@
     /* Colors */
     --apple: #429D35;
     --black: #090909;
+    --bunting: #14183E;
+    --selago: #FAF9FE;
+    --silver: #CCCCCC;
     --tory-blue: #0E61A1;
     --white: #fffffb;
 
-    --primary: var(--apple);
-    --secondary: var(--tory-blue);
+    --primary: var(--bunting);
+    --secondary: var(--apple);
+    --tertiary: var(--tory-blue);
 
     --content-color: var(--primary);
 
@@ -20,17 +24,17 @@
     --border-radius: 12px;
 
     /* Spacings */
-    --spacing-section-inner: 2rem;
+    --spacing-section-inner: 3rem;
     --spacing-section-outer: 4rem;
-    --content-spacing: 2rem; 
-    --spacing-title: 1em;
+    --content-spacing: 1rem;
+    --spacing-title: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
     :root {
         /* Spacings */
-        --spacing-section-inner: 3rem;
-        --spacing-section-outer: 5rem;
-        --spacing-title: 1.25em;
+        --spacing-section-inner: 5rem;
+        --spacing-section-outer: 7rem;
+        --spacing-title: 2rem;
     }
 }

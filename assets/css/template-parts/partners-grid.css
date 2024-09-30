@@ -1,0 +1,43 @@
+/* #Partners Grid
+--------------------------------------------------------------- */
+.partners-grid {
+    margin: var(--spacing-section-outer) 0;
+    padding: var(--spacing-section-inner) 0;
+    text-align: center;
+    background-color: var(--selago);
+}
+
+.partners-grid h2 {
+    margin-bottom: var(--spacing-title);
+}
+
+.partners-grid .content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.partners-grid .logos-grid {
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .partners-grid .logos-grid {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+
+.partners-grid .logos-grid>li {
+    max-width: 72px;
+    max-height: 72px;
+}
+
+.partners-grid .logos-grid>li img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}

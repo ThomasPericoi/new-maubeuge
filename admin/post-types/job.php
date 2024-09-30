@@ -1,6 +1,6 @@
 <?php
 $labels = [
-    'name' => 'Métiers',
+    'name' => 'Nos métiers',
     'singular_name' => 'Métier',
     'add_new' => 'Ajouter',
     'add_new_item' => 'Ajouter un métier',

@@ -1,2 +1,7 @@
 /* #Heros
 --------------------------------------------------------------- */
+.hero-simple {
+    margin-top: 24px;
+    margin-bottom: var(--spacing-section-inner);
+    text-align: center;
+}

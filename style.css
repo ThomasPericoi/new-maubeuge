@@ -46,6 +46,9 @@ Text Domain: new-maubeuge
 /* #Template Parts
 --------------------------------------------------------------- */
 
+@import "./assets/css/template-parts/home-commitments.css";
+@import "./assets/css/template-parts/partners-grid.css";
+
 /* #Templates
 --------------------------------------------------------------- */
 
@@ -56,4 +59,4 @@ Text Domain: new-maubeuge
 @import "./assets/css/pages/front-page.css";
 @import "./assets/css/pages/index.css";
 @import "./assets/css/pages/page.css";
-@import "./assets/css/pages/single.css"; 
+@import "./assets/css/pages/single.css";

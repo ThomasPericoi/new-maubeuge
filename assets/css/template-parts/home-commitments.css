@@ -1,0 +1,46 @@
+/* #Home Commitments
+--------------------------------------------------------------- */
+.home-commitments {
+    margin: var(--spacing-section-inner) 0;
+    text-align: center;
+}
+
+.home-commitments h2 {
+    margin-bottom: var(--spacing-title);
+}
+
+.home-commitments .commitments-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+    .home-commitments .commitments-grid {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.home-commitments .commitments-grid .element {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-commitments .commitments-grid .element img {
+    max-width: 42px;
+    width: 100%;
+    max-height: 42px;
+    height: auto;
+    display: block;
+}
+
+.home-commitments .commitments-grid .element p {
+    margin-top: 0.5rem;
+    font-weight: 700;
+}

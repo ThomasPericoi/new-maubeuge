@@ -78,11 +78,91 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Element - Header - Menu
-    document
-        .querySelectorAll(
-            "header .menu-header>li>a, .super-menu-wrapper .menu-header li a"
-        )
+    document.querySelectorAll(
+        "header .menu-header>li>a"
+    )
         .forEach(function (item) {
             item.tabIndex = 0;
         });
+
+    if (window.innerWidth < 1200) {
+        document.querySelector(".nav-wrapper").toggleAttribute("inert");
+        document
+            .querySelector("main")
+            .setAttribute(
+                "aria-hidden",
+                !(document.querySelector("main").getAttribute("aria-hidden") == "true"
+                    ? true
+                    : false)
+            );
+    }
+
+    document.querySelectorAll(".menu-toggle").forEach(function (item) {
+        item.addEventListener("click", function () {
+            document.querySelector("body").classList.toggle("js-menuOpened");
+            if (window.innerWidth < 1200) {
+                document.querySelector(".nav-wrapper").toggleAttribute("inert");
+                document
+                    .querySelector("main")
+                    .setAttribute(
+                        "aria-hidden",
+                        !(document.querySelector("main").getAttribute("aria-hidden") == "true"
+                            ? true
+                            : false)
+                    );
+            }
+            document.querySelector("main").toggleAttribute("inert");
+            document
+                .querySelector("main")
+                .setAttribute(
+                    "aria-hidden",
+                    !(document.querySelector("main").getAttribute("aria-hidden") == "true"
+                        ? true
+                        : false)
+                );
+            document.querySelector("footer").toggleAttribute("inert");
+            document
+                .querySelector("footer")
+                .setAttribute(
+                    "aria-hidden",
+                    !(document.querySelector("footer").getAttribute("aria-hidden") ==
+                        "true"
+                        ? true
+                        : false)
+                );
+        });
+    });
+
+    document.querySelectorAll("#menu-toggle").forEach(function (item) {
+        item.addEventListener("keydown", (event) => {
+            if (event.code === "Enter") {
+                item.click();
+            }
+        });
+    });
+
+    // Template Part - Partners Grid
+    var init = false;
+    var swiperPartners;
+    function initSwiperPartners() {
+        if (window.innerWidth <= 767) {
+            if (!init) {
+                init = true;
+                swiperPartners = new Swiper(".logos-wrapper.swiper", {
+                    loop: true,
+                    slidesPerView: "auto",
+                    spaceBetween: 40,
+                    autoplay: {
+                        delay: 1500,
+                        disableOnInteraction: false,
+                    },
+                });
+            }
+        } else if (init) {
+            swiperPartners.destroy();
+            init = false;
+        }
+    }
+    initSwiperPartners();
+    window.addEventListener("resize", initSwiperPartners);
 });

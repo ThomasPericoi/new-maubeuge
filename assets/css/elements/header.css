@@ -1,2 +1,270 @@
 /* #Header
 --------------------------------------------------------------- */
+body.js-menuOpened {
+    overflow: hidden;
+}
+
+#header {
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    background-color: var(--white);
+    z-index: 99;
+}
+
+@media screen and (min-width: 1200px) {
+    #header {
+        padding: 0;
+    }
+}
+
+.admin-bar #header {
+    top: var(--wp-admin--admin-bar--height);
+}
+
+#header .inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#header .nav-wrapper {
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    padding: 2em;
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1.5rem;
+    background-color: var(--white);
+    transform: translateX(100%);
+    overflow-y: auto;
+    box-sizing: border-box;
+    transition: transform ease 350ms;
+}
+
+@media screen and (min-width: 1200px) {
+    #header .nav-wrapper {
+        height: auto !important;
+        padding: 0;
+        position: unset;
+        top: unset;
+        right: unset;
+        flex-direction: row;
+        align-items: center;
+        overflow-y: unset;
+        transform: translateX(0);
+    }
+}
+
+.js-menuOpened #header .nav-wrapper {
+    transform: translateX(0);
+}
+
+#header .custom-logo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+.menu-header {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: unset;
+    transition: opacity ease 350ms;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.menu-header li a {
+    width: unset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color ease 350ms;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-header li a {
+        padding: 2rem 0;
+        justify-content: flex-end;
+    }
+}
+
+.menu-header li a:hover,
+.menu-header li a:focus {
+    color: var(--secondary);
+}
+
+.menu-header li.menu-item-has-children>a:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 20px 20px;
+    background-image: url(../../icons/chevron-right.svg);
+    transform: rotate(0deg);
+    transition: transform ease 350ms, filter ease 350ms;
+}
+
+.menu-header li.menu-item-has-children>a:hover:after,
+.menu-header li.menu-item-has-children>a:focus:after {
+    transform: rotate(90deg);
+    filter: brightness(0) saturate(100%) invert(45%) sepia(94%) saturate(359%) hue-rotate(65deg) brightness(95%) contrast(87%);
+}
+
+.menu-header li.menu-item-has-children {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-header li.menu-item-has-children>ul.sub-menu {
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 0.5em;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-header li.menu-item-has-children>ul.sub-menu {
+        min-width: 16rem;
+        margin-top: 0;
+        position: absolute;
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+    }
+}
+
+.menu-header li.menu-item-has-children:hover>ul.sub-menu,
+.menu-header li.menu-item-has-children>a:focus+ul.sub-menu,
+.menu-header li.menu-item-has-children:focus-within>ul.sub-menu {
+    display: block;
+}
+
+.menu-header li.menu-item-has-children>ul.sub-menu a {
+    padding: 0.75rem 1.5rem;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 14px;
+}
+
+.menu-header li.menu-item-has-children>ul.sub-menu li a img {
+    max-width: 32px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Toggle */
+.menu-toggle-col {
+    width: 30px;
+    transition: opacity ease 350ms;
+}
+
+.menu-toggle-wrapper {
+    position: relative;
+}
+
+#menu-toggle {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu-toggle:focus+div {
+    outline: dashed 1px var(--secondary);
+    outline-offset: 6px;
+}
+
+.menu-toggle-open {
+    max-width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.menu-toggle-open>span {
+    margin-top: 13px;
+}
+
+.menu-toggle-open>span,
+.menu-toggle-open>span:before,
+.menu-toggle-open>span:after {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    display: block;
+    background-color: var(--secondary);
+}
+
+.menu-toggle-open>span:before,
+.menu-toggle-open>span:after {
+    width: 20px;
+    right: 0;
+}
+
+.menu-toggle-open>span:before {
+    content: "";
+    margin-top: -13px;
+    transition: width ease 350ms;
+}
+
+.menu-toggle-open>span:after {
+    content: "";
+    margin-top: 13px;
+    transition: width ease 350ms 90ms;
+}
+
+.menu-toggle-wrapper:hover .menu-toggle-open>span:before,
+.menu-toggle-wrapper:focus .menu-toggle-open>span:before,
+.menu-toggle-wrapper:hover .menu-toggle-open>span:after,
+.menu-toggle-wrapper:focus .menu-toggle-open>span:after {
+    width: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-toggle-col {
+        display: none;
+    }
+}

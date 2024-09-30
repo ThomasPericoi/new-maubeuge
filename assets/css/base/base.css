@@ -11,12 +11,16 @@ main {
     animation-fill-mode: forwards;
 }
 
+.admin-bar main {
+    margin-top: calc(var(--header-height) + var(--wp-admin--admin-bar--height));
+}
+
 ::selection {
-    background: var(--primary);
+    background: var(--secondary);
 }
 
 ::-moz-selection {
-    background: var(--primary);
+    background: var(--secondary);
 }
 
 .sr-only {

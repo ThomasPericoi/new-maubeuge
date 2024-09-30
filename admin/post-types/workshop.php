@@ -1,6 +1,6 @@
 <?php
 $labels = [
-    'name' => 'Ateliers',
+    'name' => 'Nos ateliers',
     'singular_name' => 'Atelier',
     'add_new' => 'Ajouter',
     'add_new_item' => 'Ajouter un atelier',
