@@ -1,6 +1,6 @@
 {
     "key": "group_66e972a25089c",
-    "title": "Options - Éléments récurrents",
+    "title": "Options de thème - Éléments récurrents",
     "fields": [
         {
             "key": "field_66e972a392216",
@@ -40,7 +40,7 @@
         },
         {
             "key": "field_66e974729f780",
-            "label": "Titre de l'élément",
+            "label": "Titre de la section",
             "name": "partners_grid_title",
             "aria-label": "",
             "type": "text",
@@ -61,7 +61,7 @@
         },
         {
             "key": "field_66e9749f9f781",
-            "label": "Texte de l'élément",
+            "label": "Texte de section",
             "name": "partners_grid_text",
             "aria-label": "",
             "type": "wysiwyg",
@@ -107,6 +107,162 @@
             "mime_types": "png, svg, webp",
             "insert": "append",
             "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_67094359af10b",
+            "label": "Pages recommandées \"Découvrir aussi\"",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_67094377af10c",
+            "label": "Où est-ce que cet élément apparaît ?",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Apparaît sur toutes les pages ayant pour parent \"L'association\" .",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6709439baf10d",
+            "label": "Titre de la section",
+            "name": "association_discover_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_670943efb5cef",
+            "label": "Contenus suggérés",
+            "name": "association_discover_cards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un élément",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_67094494e332a",
+                    "label": "Label",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_670943efb5cef"
+                },
+                {
+                    "key": "field_6709440bb5cf0",
+                    "label": "Lien",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page",
+                        "avs_project"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_670943efb5cef"
+                },
+                {
+                    "key": "field_670944aee332b",
+                    "label": "Image de fond",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_670943efb5cef"
+                }
+            ]
         }
     ],
     "location": [
@@ -127,5 +283,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726583125
+    "modified": 1728661161
 }

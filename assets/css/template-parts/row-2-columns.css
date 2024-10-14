@@ -1,0 +1,74 @@
+/* #Row 2 Columns
+--------------------------------------------------------------- */
+.row-2-columns {
+    position: relative;
+    margin: var(--spacing-section-outer) 0;
+}
+
+/* Content */
+.row-2-columns .formatted {
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.row-2-columns .formatted ul {
+    gap: 1.5rem;
+}
+
+.row-2-columns .formatted ul>li {
+    padding: 0;
+    align-items: center;
+}
+
+.row-2-columns .formatted ul>li:before {
+    content: url("../../icons/check.svg");
+    width: 30px;
+    height: 26px;
+    margin: 0;
+    position: relative;
+    transform: unset;
+    display: block;
+    border: 0;
+    border-radius: 0;
+}
+
+/* Image */
+.row-2-columns .image-wrapper {
+    position: relative;
+}
+
+.row-2-columns .image-wrapper:before,
+.row-2-columns .image-wrapper:after {
+    content: "";
+    height: auto;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: -1;
+}
+
+.row-2-columns .image-wrapper:before {
+    width: 45%;
+    top: -19px;
+    left: -19px;
+    background-color: var(--color-theme);
+    border-radius: 0 10px 0 30px;
+}
+
+.row-2-columns .image-wrapper:after {
+    width: 80%;
+    right: -19px;
+    bottom: -19px;
+    z-index: -1;
+    border: 1px solid var(--mercury);
+    border-radius: 10px 0 30px 0;
+}
+
+.row-2-columns .thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: var(--border-radius);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

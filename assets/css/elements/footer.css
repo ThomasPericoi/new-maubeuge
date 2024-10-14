@@ -39,44 +39,6 @@
     display: block;
 }
 
-#main-footer .socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-#main-footer .social {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid var(--black);
-    border-radius: 50%;
-    transition: background-color ease 350ms;
-}
-
-#main-footer .social:hover,
-#main-footer .social:focus {
-    background-color: var(--black);
-}
-
-#main-footer .social>svg {
-    max-width: 20px;
-    width: 100%;
-    max-height: 25px;
-    height: auto;
-    display: block;
-    transition: filter ease 350ms;
-}
-
-#main-footer .social:hover>svg,
-#main-footer .social:focus>svg {
-    filter: brightness(0) invert(1);
-}
-
 #main-footer .menu-footer .title {
     margin-bottom: 1rem;
 }

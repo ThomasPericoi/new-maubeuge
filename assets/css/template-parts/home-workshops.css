@@ -1,0 +1,16 @@
+/* #Home Workshops
+--------------------------------------------------------------- */
+.home-workshops {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.home-workshops h2 {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-title) auto;
+    display: block;
+    text-align: center;
+}
+
+.home-workshops .map-wrapper {
+    margin-top: var(--spacing-section-inner);
+}

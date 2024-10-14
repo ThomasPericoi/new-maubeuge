@@ -35,6 +35,18 @@ add_action('init', 'register_custom_post_types');
 function register_custom_taxonomy() {}
 add_action('init', 'register_custom_taxonomy');
 
+// Sort Project Archive by date
+function sort_project_by_field($query)
+{
+    if ($query->is_post_type_archive('avs_project')) {
+        $query->set('posts_per_page', '4');
+        $query->set('order', 'DESC');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('meta_key', 'date');
+    }
+}
+add_action('pre_get_posts', 'sort_project_by_field');
+
 /* BLOCK(S)
 --------------------------------------------------------------- */
 

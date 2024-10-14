@@ -5,6 +5,9 @@
     --apple: #429D35;
     --black: #090909;
     --bunting: #14183E;
+    --endeavour: #00539F;
+    --harp: #ECF5EB;
+    --mercury: #E8E8E8;
     --selago: #FAF9FE;
     --silver: #CCCCCC;
     --tory-blue: #0E61A1;
@@ -34,7 +37,7 @@
     :root {
         /* Spacings */
         --spacing-section-inner: 5rem;
-        --spacing-section-outer: 7rem;
+        --spacing-section-outer: 6.5rem;
         --spacing-title: 2rem;
     }
 }

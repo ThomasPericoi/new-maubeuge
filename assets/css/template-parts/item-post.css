@@ -1,0 +1,48 @@
+/* #Item Post
+--------------------------------------------------------------- */
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    .post {
+        flex-direction: row;
+    }
+}
+
+.post .image {
+    max-width: unset;
+}
+
+@media screen and (min-width: 768px) {
+    .post .image {
+        max-width: 375px;
+    }
+}
+
+.post .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+.post .title {
+    margin-bottom: 5px;
+}
+
+.post p {
+    margin-top: 1rem;
+}
+
+.post .btn {
+    margin-top: 1.5rem;
+}
+
+.post:hover .btn {
+    text-decoration: underline;
+}

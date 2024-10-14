@@ -1,7 +1,23 @@
 /* #Heros
 --------------------------------------------------------------- */
+/* Simple */
 .hero-simple {
     margin-top: 24px;
     margin-bottom: var(--spacing-section-inner);
     text-align: center;
+}
+
+/* Project */
+.hero-project .thumbnail {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-project .date {
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-weight: 500;
 }

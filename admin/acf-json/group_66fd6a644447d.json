@@ -1,0 +1,103 @@
+{
+    "key": "group_66fd6a644447d",
+    "title": "Options de page - Page des publications",
+    "fields": [
+        {
+            "key": "field_66fd7056e28eb",
+            "label": "Hero",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66fd6a6466c6c",
+            "label": "Titre de la page",
+            "name": "index_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Remplace le titre de la page si le champs est rempli.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66fd6ffaba32d",
+            "label": "Barre latérale",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66fd6b4884ed4",
+            "label": "Code iframe de Facebook",
+            "name": "index_facebook_iframe",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Se rendre ici pour générer le code : <a href=\"https:\/\/developers.facebook.com\/docs\/plugins\/page-plugin\/\" target=\"_blank\">https:\/\/developers.facebook.com\/docs\/plugins\/page-plugin<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "posts_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1727885501
+}

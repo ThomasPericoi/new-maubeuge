@@ -1,0 +1,87 @@
+/* #Single Project
+--------------------------------------------------------------- */
+/* Hero */
+.single-avs_project .thumbnail {
+    margin-bottom: 2.5rem;
+}
+
+.single-avs_project .hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.single-avs_project .hero .breadcrumbs {
+    margin-bottom: 0;
+}
+
+/* Content */
+.single-avs_project #content {
+    margin-top: 0.25rem;
+    margin-bottom: var(--spacing-section-inner);
+}
+
+.single-avs_project h2 {
+    font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .single-avs_project h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .single-avs_project h2 {
+        font-size: 34px;
+    }
+}
+
+/* Team */
+.single-avs_project .team {
+    padding: var(--spacing-section-inner) 0;
+    background-color: var(--harp);
+    text-align: center;
+}
+
+.single-avs_project .team .text {
+    margin: 0.5rem auto 0 auto;
+    max-width: 750px;
+}
+
+.single-avs_project .team-grid {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .single-avs_project .team-grid {
+        flex-direction: row;
+    }
+}
+
+.single-avs_project .team-grid .item {
+    width: 100%;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-avs_project .team-grid img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 50%;
+}
+
+.single-avs_project .team-grid h4 {
+    font-family: var(--body);
+}

@@ -87,21 +87,52 @@
     background-image: url(../../icons/user.svg);
 }
 
-/* Pagination */
-.navigation.pagination {
-    margin-top: var(--spacing-section-inner);
-    font-weight: 700;
-    font-family: var(--bold);
-}
-
-.navigation.pagination .nav-links {
+/* Socials */
+.socials {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 0.5rem;
 }
 
-.navigation.pagination a {
-    color: var(--primary);
-    text-decoration: none;
+.socials .social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    transition: background-color ease 350ms;
+}
+
+.socials .social:hover,
+.socials .social:focus {
+    background-color: var(--black);
+}
+
+.socials .social>svg {
+    max-width: 20px;
+    width: 100%;
+    max-height: 25px;
+    height: auto;
+    display: block;
+    transition: filter ease 350ms;
+}
+
+.socials .social:hover>svg,
+.socials .social:focus>svg {
+    filter: brightness(0) invert(1);
+}
+
+/* Back */
+.btn-back {
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
 }

@@ -35,19 +35,19 @@
 
             <?php if (has_nav_menu('footer-menu-1')) : ?>
                 <div class="menu menu-footer">
-                    <h3 class="title h6-size"><?php echo wp_get_nav_menu_object($locations['footer-menu-1'])->name; ?></h3>
+                    <h3 class="h6-size title"><?php echo wp_get_nav_menu_object($locations['footer-menu-1'])->name; ?></h3>
                     <?php wp_nav_menu(array('theme_location' => 'footer-menu-1', 'container' => false, 'depth' => 1)); ?>
                 </div>
             <?php endif; ?>
             <?php if (has_nav_menu('footer-menu-2')) : ?>
                 <div class="menu menu-footer">
-                    <h3 class="title h6-size"><?php echo wp_get_nav_menu_object($locations['footer-menu-2'])->name; ?></h3>
+                    <h3 class="h6-size title"><?php echo wp_get_nav_menu_object($locations['footer-menu-2'])->name; ?></h3>
                     <?php wp_nav_menu(array('theme_location' => 'footer-menu-2', 'container' => false, 'depth' => 1)); ?>
                 </div>
             <?php endif; ?>
             <?php if (has_nav_menu('footer-menu-3')) : ?>
                 <div class="menu menu-footer">
-                    <h3 class="title h6-size"><?php echo wp_get_nav_menu_object($locations['footer-menu-3'])->name; ?></h3>
+                    <h3 class="h6-size title"><?php echo wp_get_nav_menu_object($locations['footer-menu-3'])->name; ?></h3>
                     <?php wp_nav_menu(array('theme_location' => 'footer-menu-3', 'container' => false, 'depth' => 1)); ?>
                 </div>
             <?php endif; ?>

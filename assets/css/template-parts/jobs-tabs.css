@@ -1,0 +1,12 @@
+/* #Jobs Tabs
+--------------------------------------------------------------- */
+.jobs-tabs {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.jobs-tabs h2 {
+    max-width: 650px;
+    margin: 0 auto var(--spacing-title) auto;
+    display: block;
+    text-align: center;
+}

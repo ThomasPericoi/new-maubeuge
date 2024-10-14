@@ -1,2 +1,14 @@
 /* #Single
 --------------------------------------------------------------- */
+.single-post main {
+    padding: 0 0 var(--spacing-section-outer) 0;
+    position: relative;
+}
+
+.single-post .hero .cover {
+    width: 100%;
+    height: auto;
+    margin: var(--spacing-section-inner) auto 0 auto;
+    display: block;
+    border-radius: var(--border-radius);
+}

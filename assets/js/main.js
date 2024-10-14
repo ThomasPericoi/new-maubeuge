@@ -1,5 +1,6 @@
 // On load
 document.addEventListener("DOMContentLoaded", function () {
+    actualHost = window.location.origin;
     // General - Set/Update variables
     function updateVariables() {
         document
@@ -165,4 +166,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     initSwiperPartners();
     window.addEventListener("resize", initSwiperPartners);
+
+    // Page - Project
+    function goToPreviousProject() {
+        if (document.referrer.indexOf(actualHost) >= 0) {
+            window.location.href = document.referrer;
+        }
+        else {
+            console.log(actualHost + '/nos-projets/');
+            window.location.href = actualHost + '/nos-projets/';
+        }
+    }
+    document.querySelector(".single-avs_project .btn-back").addEventListener("click", goToPreviousProject);
 });

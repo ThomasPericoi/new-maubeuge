@@ -17,12 +17,11 @@
 }
 
 .partners-grid .logos-grid {
-    margin-top: 2.5rem;
+    margin-top: var(--spacing-section-inner);
 }
 
 @media screen and (min-width: 768px) {
     .partners-grid .logos-grid {
-        margin-top: 2.5rem;
         display: flex;
         flex-wrap: wrap;
         align-items: center;

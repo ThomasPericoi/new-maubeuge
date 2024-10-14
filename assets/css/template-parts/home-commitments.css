@@ -1,7 +1,7 @@
 /* #Home Commitments
 --------------------------------------------------------------- */
 .home-commitments {
-    margin: var(--spacing-section-inner) 0;
+    margin: var(--spacing-section-outer) 0 var(--spacing-section-inner) 0;
     text-align: center;
 }
 

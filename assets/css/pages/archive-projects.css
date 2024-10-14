@@ -1,0 +1,30 @@
+/* #Archive Projects
+--------------------------------------------------------------- */
+.post-type-archive-avs_project main {
+    padding: 0 0 var(--spacing-section-outer) 0;
+    position: relative;
+}
+
+.post-type-archive-avs_project #content {
+    margin: var(--spacing-section-inner) 0;
+}
+
+.post-type-archive-avs_project .project-list {
+    display: grid;
+    grid-gap: var(--spacing-section-inner);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 1200px) {
+    .post-type-archive-avs_project .project-list {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: calc(var(--spacing-section-inner) + var(--spacing-section-outer));
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .post-type-archive-avs_project .project-list .element:nth-of-type(2n+2) {
+        top: var(--spacing-section-inner);
+        position: relative;
+    }
+}

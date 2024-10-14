@@ -11,15 +11,13 @@ main {
     animation-fill-mode: forwards;
 }
 
-.admin-bar main {
-    margin-top: calc(var(--header-height) + var(--wp-admin--admin-bar--height));
-}
-
 ::selection {
+    color: var(--white);
     background: var(--secondary);
 }
 
 ::-moz-selection {
+    color: var(--white);
     background: var(--secondary);
 }
 

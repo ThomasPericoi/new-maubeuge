@@ -1,0 +1,46 @@
+/* #Association Discover
+--------------------------------------------------------------- */
+.association-discover {
+    margin: var(--spacing-section-outer) 0 var(--spacing-section-inner) 0;
+}
+
+.association-discover h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-title);
+}
+
+.association-discover .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .association-discover .cards-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.association-discover .cards-grid .element {
+    min-height: 160px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--bold);
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #0005;
+    background-blend-mode: darken;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.association-discover .cards-grid .element:hover {
+    text-decoration: underline;
+}

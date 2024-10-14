@@ -29,6 +29,7 @@ $args = [
         'title',
         'editor',
         'thumbnail',
+        'excerpt',
         'custom-fields',
     ],
     'taxonomies' => [],

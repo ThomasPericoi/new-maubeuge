@@ -1,6 +1,6 @@
 {
     "key": "group_66e98e7e17aa6",
-    "title": "Options - En-tête",
+    "title": "Options de thème - En-tête",
     "fields": [
         {
             "key": "field_66ec349a2febc",
@@ -145,5 +145,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726756104
+    "modified": 1728643647
 }

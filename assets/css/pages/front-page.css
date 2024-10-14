@@ -1,2 +1,14 @@
 /* #Front page
 --------------------------------------------------------------- */
+.home .row-2-columns:before {
+    content: "";
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1.25;
+    position: absolute;
+    top: calc((var(--spacing-section-outer) * -1) - 1px);
+    left: -1px;
+    z-index: -1;
+    border: 1px solid var(--mercury);
+    border-radius: 10px 0 70px 0;
+}

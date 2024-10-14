@@ -1,6 +1,6 @@
 {
     "key": "group_66ec43538d0c3",
-    "title": "Options du thème - Menu",
+    "title": "Options de thème - Menu",
     "fields": [
         {
             "key": "field_66ec4353af92a",
@@ -47,5 +47,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726759871
+    "modified": 1728643662
 }
