@@ -12,6 +12,7 @@
     'cta' => get_field("home_join_cta"),
     'image' => get_field("home_join_image"),
     'color-theme' => "endeavour",
+    'direction' => 'normal'
 )); ?>
 <?php get_template_part('template-parts/home-workshops'); ?> 
 <?php get_template_part('template-parts/latest-posts', '', array(

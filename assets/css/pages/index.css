@@ -26,11 +26,17 @@
 
 /* Pagination */
 .navigation.pagination {
-    margin-top: var(--spacing-section-inner);
+    margin-top: 1rem;
     margin-bottom: var(--spacing-section-inner);
     font-size: 20px;
     font-weight: 500;
     font-family: var(--bold);
+}
+
+@media screen and (min-width: 1200px) {
+    .navigation.pagination {
+        margin-bottom: 0;
+    }
 }
 
 .navigation.pagination .nav-links {
@@ -103,7 +109,6 @@
 .blog .sidebar {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 2rem;
 }

@@ -40,19 +40,25 @@
 }
 
 /* Colors */
+.btn.btn-white {
+    color: var(--black);
+    background-color: var(--white);
+}
+
 .btn.btn-primary {
-    background-color: var(--primary);
     color: var(--white);
+    background-color: var(--primary);
 }
 
 .btn.btn-secondary {
-    background-color: var(--secondary);
     color: var(--white);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .btn.btn-tertiairy {
-    background-color: var(--tertiairy);
     color: var(--white);
+    background-color: var(--tertiairy);
 }
 
 /* Icon */

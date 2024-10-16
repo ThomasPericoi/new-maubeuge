@@ -1,6 +1,6 @@
 <section id="row-2-columns-<?php echo uniqid(); ?>" class="row-2-columns" style="--color-theme: var(--<?php echo $args['color-theme']; ?>);">
     <div class="container">
-        <div class="cols-wrapper">
+        <div class="cols-wrapper <?php echo $args['direction']; ?>">
             <div class="col formatted">
                 <?php if ($args['title']) : ?>
                     <h2><?php echo $args['title']; ?></h2>

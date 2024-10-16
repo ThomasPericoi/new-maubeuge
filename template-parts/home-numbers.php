@@ -2,7 +2,7 @@
 <section id="home-numbers-<?php echo uniqid(); ?>" class="home-numbers">
     <div class="container container-lg">
         <?php if (get_field("home_numbers_title")) : ?>
-            <h2><?php echo get_field("home_numbers_title"); ?></h2>
+            <h1 class="h2-size"><?php echo get_field("home_numbers_title"); ?></h1>
         <?php endif; ?>
         <?php if (get_field("home_numbers_text")) : ?>
             <div class="text"><?php echo get_field("home_numbers_text"); ?></div>

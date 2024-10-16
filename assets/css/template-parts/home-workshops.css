@@ -12,5 +12,8 @@
 }
 
 .home-workshops .map-wrapper {
+    width: 100%;
+    min-height: 615px;
     margin-top: var(--spacing-section-inner);
+    margin-bottom: 1rem;
 }

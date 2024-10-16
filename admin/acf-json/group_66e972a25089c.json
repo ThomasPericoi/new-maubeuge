@@ -1,6 +1,6 @@
 {
     "key": "group_66e972a25089c",
-    "title": "Options de thème - Éléments récurrents",
+    "title": "Options du thème - Éléments récurrents",
     "fields": [
         {
             "key": "field_66e972a392216",
@@ -283,5 +283,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728661161
+    "modified": 1729070572
 }

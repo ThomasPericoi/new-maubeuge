@@ -167,6 +167,31 @@ document.addEventListener("DOMContentLoaded", function () {
     initSwiperPartners();
     window.addEventListener("resize", initSwiperPartners);
 
+    // Page - Page d'accueil
+    const swiperHero = new Swiper('.home-hero-slider', {
+        loop: true,
+        autoHeight: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
+    });
+
+    if (document.querySelector('#homepage-map')) {
+        const homepageMap = L.map('homepage-map').setView([50.2558, 3.9314], 12);
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(homepageMap);
+    }
+
     // Page - Project
     function goToPreviousProject() {
         if (document.referrer.indexOf(actualHost) >= 0) {
@@ -177,5 +202,15 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = actualHost + '/nos-projets/';
         }
     }
-    document.querySelector(".single-avs_project .btn-back").addEventListener("click", goToPreviousProject);
+    if (document.querySelector(".single-avs_project .btn-back")) {
+        document.querySelector(".single-avs_project .btn-back").addEventListener("click", goToPreviousProject);
+    }
+
+    // Page - Workshops
+    if (document.querySelector('#archive-workshops-map')) {
+        const archiveWorkshopsMap = L.map('archive-workshops-map').setView([50.2558, 3.9314], 12);
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(archiveWorkshopsMap);
+    }
 });

@@ -1,6 +1,8 @@
 /* #Item Post
 --------------------------------------------------------------- */
-.post {
+.posts-grid .post,
+.posts-list .post {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,40 +11,57 @@
 }
 
 @media screen and (min-width: 992px) {
-    .post {
+
+    .posts-grid .post,
+    .posts-list .post {
         flex-direction: row;
     }
 }
 
-.post .image {
+.posts-grid .post .image,
+.posts-list .post .image {
     max-width: unset;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .post .image {
+
+    .posts-grid .post .image,
+    .posts-list .post .image {
         max-width: 375px;
     }
 }
 
-.post .image img {
+.posts-grid .post .image img,
+.posts-list .post .image img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: var(--border-radius);
 }
 
-.post .title {
+.posts-grid .post .content,
+.posts-list .post .content {
+    max-width: unset;
+    width: 100%;
+}
+
+.posts-grid .post .title,
+.posts-list .post .title {
     margin-bottom: 5px;
 }
 
-.post p {
+.posts-grid .post p,
+.posts-list .post p {
     margin-top: 1rem;
 }
 
-.post .btn {
+.posts-grid .post .btn,
+.posts-list .post .btn {
     margin-top: 1.5rem;
 }
 
-.post:hover .btn {
+.posts-grid .post:hover .btn,
+.posts-list .post:hover .btn {
     text-decoration: underline;
 }

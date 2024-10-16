@@ -21,7 +21,7 @@
 </section>
 
 <?php get_template_part('template-parts/latest-posts', '', array(
-    'numberposts' => get_field("home_posts_amount"),
+    'amount' => 3,
     'section_title' => __("Nos dernières actualités", "new-maubeuge"),
 )); ?>
 

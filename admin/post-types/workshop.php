@@ -1,17 +1,17 @@
 <?php
 $labels = [
-    'name' => 'Nos ateliers',
-    'singular_name' => 'Atelier',
+    'name' => 'Nos implantations',
+    'singular_name' => 'Implantation',
     'add_new' => 'Ajouter',
-    'add_new_item' => 'Ajouter un atelier',
-    'edit_item' => 'Modifier un atelier',
-    'new_item' => 'Nouveau atelier',
-    'view_item' => 'Voir le atelier',
-    'view_items' => 'Voir les ateliers',
-    'search_items' => 'Rechercher un atelier',
-    'not_found' =>  'Pas de atelier trouvé.',
-    'all_items' => 'Tous les ateliers',
-    'not_found_in_trash' => 'Pas d\'atelier trouvé dans la corbeille.',
+    'add_new_item' => 'Ajouter une implantation',
+    'edit_item' => 'Modifier une implantation',
+    'new_item' => 'Nouvelle implantation',
+    'view_item' => 'Voir l\'implantation',
+    'view_items' => 'Voir les implantations',
+    'search_items' => 'Rechercher une implantation',
+    'not_found' =>  'Pas d\'implantation trouvées.',
+    'all_items' => 'Toutes les implantations',
+    'not_found_in_trash' => 'Pas d\'implantation trouvée dans la corbeille.',
     'parent_item_colon' => ''
 ];
 

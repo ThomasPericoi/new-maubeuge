@@ -12,6 +12,10 @@
     .cols-wrapper {
         flex-direction: row;
     }
+
+    .cols-wrapper.reverse {
+        flex-direction: row-reverse;
+    }
 }
 
 .cols-wrapper>div {

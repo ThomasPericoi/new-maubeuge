@@ -21,6 +21,349 @@
             "selected": 0
         },
         {
+            "key": "field_670d21056ecd1",
+            "label": "Slider",
+            "name": "home_hero_slider",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un élément du slider",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_670d220c6ecd2",
+                    "label": "Type",
+                    "name": "type",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "simple": "Simple",
+                        "numbers": "En chiffre",
+                        "pinned-post": "Article"
+                    },
+                    "default_value": "simple",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "allow_in_bindings": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0,
+                    "parent_repeater": "field_670d21056ecd1"
+                },
+                {
+                    "key": "field_670e30e24bba5",
+                    "label": "Titre",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Les sauts à la ligne sont pris en compte.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "simple"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "numbers"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 4,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_670d21056ecd1"
+                },
+                {
+                    "key": "field_670e31324bba7",
+                    "label": "Sous-titre",
+                    "name": "subtitle",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Les sauts à la ligne sont pris en compte.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "simple"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "numbers"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_670d21056ecd1"
+                },
+                {
+                    "key": "field_670e31d29d9c4",
+                    "label": "Texte",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "Les sauts à la ligne sont pris en compte.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "simple"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "numbers"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 1,
+                    "parent_repeater": "field_670d21056ecd1"
+                },
+                {
+                    "key": "field_670e32049d9c5",
+                    "label": "CTA",
+                    "name": "cta",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "simple"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_670d21056ecd1"
+                },
+                {
+                    "key": "field_670e397f20502",
+                    "label": "Chiffres-clés",
+                    "name": "numbers",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "numbers"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Ajouter un chiffre",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_670d21056ecd1",
+                    "sub_fields": [
+                        {
+                            "key": "field_670e39c020503",
+                            "label": "Chiffre en question",
+                            "name": "number",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_670e397f20502"
+                        },
+                        {
+                            "key": "field_670e39d120504",
+                            "label": "Label du chiffre",
+                            "name": "label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_670e397f20502"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_670e2f1198ebb",
+                    "label": "Arrière-plan",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "!=",
+                                "value": "pinned-post"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_670d21056ecd1"
+                },
+                {
+                    "key": "field_670d22be6ecd3",
+                    "label": "Article concerné",
+                    "name": "post",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "De l'élément choisi découlera les informations du slide.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_670d220c6ecd2",
+                                "operator": "==",
+                                "value": "pinned-post"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "min": 1,
+                    "max": 1,
+                    "allow_in_bindings": 0,
+                    "elements": [
+                        "featured_image"
+                    ],
+                    "bidirectional": 0,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_670d21056ecd1"
+                }
+            ]
+        },
+        {
             "key": "field_66fbc7ea7e4c0",
             "label": "2) Grille d'icônes avec chiffres \"Les Ateliers du Val de Sambre\"",
             "name": "",
@@ -290,7 +633,7 @@
         },
         {
             "key": "field_670a98d982549",
-            "label": "Texte de la section",
+            "label": "Titre de la section",
             "name": "home_join_title",
             "aria-label": "",
             "type": "text",
@@ -605,5 +948,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728900970
+    "modified": 1729071596
 }

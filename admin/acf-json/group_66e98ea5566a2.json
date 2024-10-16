@@ -1,6 +1,6 @@
 {
     "key": "group_66e98ea5566a2",
-    "title": "Options de thème - Pied de page",
+    "title": "Options du thème - Pied de page",
     "fields": [
         {
             "key": "field_66eadec735d3f",
@@ -234,5 +234,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728643670
+    "modified": 1729070572
 }

@@ -38,11 +38,11 @@ endif;
                         <?php get_template_part('template-parts/item', 'post'); ?>
 
                     <?php endwhile; ?>
+                    <?php the_posts_pagination(array(
+                        'prev_text' => __('<span class="icon icon-left"></span>', 'new-maubeuge'),
+                        'next_text' => __('<span class="icon icon-right"></span>', 'new-maubeuge'),
+                    )); ?>
                 </div>
-                <?php the_posts_pagination(array(
-                    'prev_text' => __('<span class="icon icon-left"></span>', 'new-maubeuge'),
-                    'next_text' => __('<span class="icon icon-right"></span>', 'new-maubeuge'),
-                )); ?>
             <?php else : echo __('Aucun article n\'a été (encore) publié ici.', 'new-maubeuge');
             endif; ?>
 

@@ -3,5 +3,6 @@
         <?php if ($args['section_title']) : ?>
             <h2><?php echo $args['section_title']; ?></h2>
         <?php endif; ?>
+        <p># To do : L'élément Jobs Tabs apparaître là</p>
     </div>
 </section>

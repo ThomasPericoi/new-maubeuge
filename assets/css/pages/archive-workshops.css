@@ -1,0 +1,50 @@
+/* #Archive Workshops
+--------------------------------------------------------------- */
+.post-type-archive-avs_workshop .map {
+    margin: var(--spacing-section-outer) 0;
+    position: relative;
+}
+
+.post-type-archive-avs_workshop .map:before {
+    content: "";
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--mercury);
+    border-radius: 0 30px 0 10px;
+    transform: translateX(-33%);
+}
+
+/* Numbers */
+.post-type-archive-avs_workshop .numbers-grid {
+    margin-bottom: var(--spacing-section-inner);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .post-type-archive-avs_workshop .numbers-grid {
+        flex-direction: row;
+    }
+}
+
+.post-type-archive-avs_workshop .numbers-grid .element {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--secondary);
+}
+
+/* Map */
+.post-type-archive-avs_workshop .map-wrapper {
+    width: 100%;
+    min-height: 750px;
+    border-radius: var(--border-radius);
+}
