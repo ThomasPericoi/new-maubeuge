@@ -31,4 +31,13 @@
     </div>
 </section>
 
+<?php get_template_part('template-parts/row-2-columns', 'regular', array(
+    'title' => get_field("services_title"),
+    'content' => get_field("services_content"),
+    'cta' => false,
+    'image' => get_field("services_image"),
+    'color-theme' => get_field("block_color"),
+    'direction' => 'reverse',
+)); ?>
+
 <?php get_footer(); ?>

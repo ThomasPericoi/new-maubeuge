@@ -230,9 +230,95 @@
             "default_value": "",
             "allow_in_bindings": 0,
             "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 1
+        },
+        {
+            "key": "field_671a4fe3b78ae",
+            "label": "2) Rangée avec 2 colonnes \"Les services\"",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_671a5018b78af",
+            "label": "Titre de la section",
+            "name": "services_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Les services",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_671a5031b78b0",
+            "label": "Contenu de la section",
+            "name": "services_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Les sauts à la ligne sont pris en compte.\r\nIl est possible de rajouter des h3.\r\nLes listes sont également prises en compte, en suivant le style \"✔\".",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_671a5073c4074",
+            "label": "Image de la section",
+            "name": "services_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -253,5 +339,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729776230
+    "modified": 1729777862
 }
