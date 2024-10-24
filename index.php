@@ -25,8 +25,8 @@ endif;
     </div>
 </section>
 
-<!-- Content -->
-<section id="content">
+<!-- Loop -->
+<section id="loop-<?php echo uniqid(); ?>" class="loop">
     <div class="container container-lg">
 
         <div class="posts-wrapper">

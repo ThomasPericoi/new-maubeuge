@@ -64,9 +64,9 @@
             "label": "Texte de section",
             "name": "partners_grid_text",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "Les sauts à la ligne sont pris en compte.",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -74,11 +74,11 @@
                 "id": ""
             },
             "default_value": "",
-            "allow_in_bindings": 0,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 1
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_66e97527896b9",
@@ -283,5 +283,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729070572
+    "modified": 1729529341
 }

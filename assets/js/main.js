@@ -136,11 +136,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll("#menu-toggle").forEach(function (item) {
         item.addEventListener("keydown", (event) => {
-            if (event.code === "Enter") {
+            if (event.code === "Enter" || e.keyCode === 13) {
                 item.click();
             }
         });
     });
+
+    // Template Part - Jobs Tabs
+    function show_content(index) {
+        document.querySelector(".jobs-tabs .job-tab-content.visible") && document.querySelector(".jobs-tabs .job-tab-content.visible").classList.remove("visible");
+        document.querySelectorAll(".jobs-tabs .job-tab-content")[index].classList.add("visible");
+        document.querySelector(".jobs-tabs .job-tab-button.selected") && document.querySelector(".jobs-tabs .job-tab-button.selected").classList.remove("selected");
+        document.querySelectorAll(".jobs-tabs .job-tab-button")[index].classList.add("selected");
+    }
+
+    document.querySelectorAll(".jobs-tabs .job-tab-button").forEach((button, index) => {
+        button.addEventListener("click", function () {
+            show_content(index);
+        });
+
+        button.addEventListener("keypress", function (e) {
+            if (e.key === "Enter" || e.keyCode === 13) {
+                show_content(index);
+            }
+        });
+    });
+    if (document.querySelector('.jobs-tabs')) {
+        show_content(0);
+    }
 
     // Template Part - Partners Grid
     var init = false;

@@ -1,11 +1,10 @@
 /* #Archive Projects
 --------------------------------------------------------------- */
 .post-type-archive-avs_project main {
-    padding: 0 0 var(--spacing-section-outer) 0;
     position: relative;
 }
 
-.post-type-archive-avs_project #content {
+.post-type-archive-avs_project .loop {
     margin: var(--spacing-section-inner) 0;
 }
 

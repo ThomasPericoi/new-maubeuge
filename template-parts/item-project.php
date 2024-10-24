@@ -1,4 +1,4 @@
-<a href="<?php esc_url(the_permalink()); ?>" class="element project">
+<a href="<?php echo get_the_permalink(); ?>" class="element project">
     <?php if (has_post_thumbnail()) : ?>
         <div class="thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
     <?php endif; ?>

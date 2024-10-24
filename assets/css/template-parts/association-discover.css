@@ -41,6 +41,7 @@
     box-sizing: border-box;
 }
 
-.association-discover .cards-grid .element:hover {
+.association-discover .cards-grid .element:hover,
+.association-discover .cards-grid .element:focus {
     text-decoration: underline;
 }

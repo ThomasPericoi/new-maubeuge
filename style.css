@@ -6,7 +6,7 @@ Author URI: https://thomaspericoi.com/
 Description: Un thème Wordpress complet et personnalisable conçu pour Aterliers Val de Sambre, coordonné par LineUP7.
 Version: 1.0
 Requires at least: 5.9
-Tested up to: 6.0.3
+Tested up to: 6.6.2
 Text Domain: new-maubeuge
 */
 
@@ -52,15 +52,28 @@ Text Domain: new-maubeuge
 @import "./assets/css/template-parts/home-hero-slider.css";
 @import "./assets/css/template-parts/home-numbers.css";
 @import "./assets/css/template-parts/home-workshops.css";
+@import "./assets/css/template-parts/insights-list.css";
 @import "./assets/css/template-parts/item-post.css";
 @import "./assets/css/template-parts/item-project.css";
 @import "./assets/css/template-parts/jobs-tabs.css";
+@import "./assets/css/template-parts/join-us.css";
 @import "./assets/css/template-parts/latest-posts.css";
 @import "./assets/css/template-parts/partners-grid.css";
-@import "./assets/css/template-parts/row-2-columns.css";
+@import "./assets/css/template-parts/row-2-columns-regular.css";
+@import "./assets/css/template-parts/testimonials-slider.css";
 
 /* #Templates
 --------------------------------------------------------------- */
+
+@import "./assets/css/templates/contact-page.css";
+@import "./assets/css/templates/join-us.css";
+@import "./assets/css/templates/join-us-supervisors.css";
+@import "./assets/css/templates/join-us-workers.css";
+@import "./assets/css/templates/les-papillons-blancs.css";
+@import "./assets/css/templates/our-ecosystem.css";
+@import "./assets/css/templates/our-missions.css";
+@import "./assets/css/templates/our-story.css";
+@import "./assets/css/templates/our-teams.css";
 
 /* #Pages
 --------------------------------------------------------------- */
@@ -72,4 +85,6 @@ Text Domain: new-maubeuge
 @import "./assets/css/pages/index.css";
 @import "./assets/css/pages/page.css";
 @import "./assets/css/pages/single.css";
+@import "./assets/css/pages/single-job.css";
 @import "./assets/css/pages/single-project.css";
+@import "./assets/css/pages/single-workshop.css";

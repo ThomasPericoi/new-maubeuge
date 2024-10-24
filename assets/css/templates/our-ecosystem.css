@@ -1,0 +1,22 @@
+/* #Our Ecosystem
+--------------------------------------------------------------- */
+/* Become Partner */
+.page-template-our-ecosystem-template .become-partner {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.page-template-our-ecosystem-template .become-partner h2+p {
+    margin-bottom: var(--spacing-title);
+}
+
+/* CTA */
+.page-template-our-ecosystem-template .cta {
+    margin: var(--spacing-section-outer) 0;
+    padding: var(--spacing-section-inner) 0;
+    background-color: var(--harp);
+}
+
+.page-template-our-ecosystem-template .cta h2 {
+    margin-bottom: var(--spacing-title);
+    text-align: center;
+}

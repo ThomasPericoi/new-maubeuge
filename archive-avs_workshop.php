@@ -30,11 +30,11 @@
         <div id="archive-workshops-map" class="map-wrapper">
 
         </div>
-        <p># To do : La carte sera intéractive</p>
+        <p># TO DO : La carte interactive</p>
     </div>
 </section>
 
-<?php get_template_part('template-parts/row-2-columns', '', array(
+<?php get_template_part('template-parts/row-2-columns', 'regular', array(
     'title' => get_field("workshops_content_title", "options"),
     'content' => get_field("workshops_content_content", "options"),
     'cta' => false,

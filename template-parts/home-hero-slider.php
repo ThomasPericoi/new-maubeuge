@@ -48,7 +48,7 @@
                                     <div class="h2-size title"><?php echo get_the_title(); ?></div>
                                     <div class="date"><?php echo get_the_date('d/m/Y'); ?></div>
                                     <div class="excerpt"><?php echo get_the_excerpt(); ?></div>
-                                    <a href="<?php echo  get_the_permalink(); ?>" class="btn btn-white"><?php echo __("Lire la suite", "new-maubeuge"); ?></a>
+                                    <a href="<?php echo get_the_permalink(); ?>" class="btn btn-white"><?php echo __("Lire la suite", "new-maubeuge"); ?></a>
                                 </div>
                             </div>
                         </div>

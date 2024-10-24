@@ -5,9 +5,7 @@
             <h2><?php echo get_field("partners_grid_title", "options"); ?></h2>
         <?php endif; ?>
         <?php if (get_field("partners_grid_text", "options")) : ?>
-            <div class="content formatted">
-                <?php echo get_field("partners_grid_text", "options"); ?>
-            </div>
+            <p><?php echo get_field("partners_grid_text", "options"); ?></p>
         <?php endif; ?>
         <?php if (get_field("partners_grid_logos", "options")): ?>
             <div class="logos-wrapper swiper">

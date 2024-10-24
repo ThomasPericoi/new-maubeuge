@@ -1,0 +1,15 @@
+/* #Our Missions & Values
+--------------------------------------------------------------- */
+.page-template-our-missions-template .our-values {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.page-template-our-missions-template .our-values h2 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.page-template-our-missions-template .our-values h2 + p {
+    margin-bottom: var(--spacing-title);
+    text-align: center;
+} 

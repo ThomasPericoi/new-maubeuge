@@ -1,7 +1,6 @@
 /* #Single
 --------------------------------------------------------------- */
 .single-post main {
-    padding: 0 0 var(--spacing-section-outer) 0;
     position: relative;
 }
 

@@ -407,9 +407,9 @@
             "label": "Texte de la section",
             "name": "home_numbers_text",
             "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 1,
+            "type": "textarea",
+            "instructions": "Les sauts à la ligne sont pris en compte.",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -417,11 +417,11 @@
                 "id": ""
             },
             "default_value": "",
-            "allow_in_bindings": 0,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 1
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
         },
         {
             "key": "field_66fbcde67afdd",
@@ -540,7 +540,7 @@
         },
         {
             "key": "field_670a90c89bfd7",
-            "label": "Texte de la section",
+            "label": "Titre de la section",
             "name": "home_jobs_tabs_title",
             "aria-label": "",
             "type": "text",
@@ -658,7 +658,7 @@
             "name": "home_join_content",
             "aria-label": "",
             "type": "wysiwyg",
-            "instructions": "Les sauts à la ligne sont pris en compte.\r\nLes listes sont également prises en compte, en suivant le style \"✔\".",
+            "instructions": "Les sauts à la ligne sont pris en compte.\r\nIl est possible de rajouter des h3.\r\nLes listes sont également prises en compte, en suivant le style \"✔\".",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -948,5 +948,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729071596
+    "modified": 1729763383
 }

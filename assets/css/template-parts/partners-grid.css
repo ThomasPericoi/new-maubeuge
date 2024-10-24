@@ -8,16 +8,12 @@
 }
 
 .partners-grid h2 {
-    margin-bottom: var(--spacing-title);
+    margin-bottom: 5px;
 }
 
-.partners-grid .content {
+.partners-grid p {
     max-width: 950px;
-    margin: 0 auto;
-}
-
-.partners-grid .logos-grid {
-    margin-top: var(--spacing-section-inner);
+    margin: 0 auto var(--spacing-title) auto;
 }
 
 @media screen and (min-width: 768px) {

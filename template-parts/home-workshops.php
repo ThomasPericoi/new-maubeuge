@@ -6,11 +6,10 @@
     </div>
 
     <div id="homepage-map" class="map-wrapper">
-
     </div>
-    <p># To do : La carte sera intéractive</p>
-
+    
     <div class="container">
+        <p># TO DO : La carte interactive</p>
         <div class="btn-wrapper">
             <a class="btn btn-secondary" href="<?php echo get_post_type_archive_link('avs_workshop'); ?>"><?php echo __("Découvrir nos ateliers", "new-maubeuge"); ?></a>
         </div>

@@ -8,11 +8,14 @@
 }
 
 .home-numbers h1 {
+    margin-bottom: 5px;
+}
+
+.home-numbers h1 + p {
     margin-bottom: var(--spacing-title);
 }
 
 .home-numbers .numbers-grid {
-    margin-top: var(--spacing-section-inner);
     display: flex;
     flex-direction: column;
     gap: 1rem;

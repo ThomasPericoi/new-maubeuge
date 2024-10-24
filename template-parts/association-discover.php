@@ -2,7 +2,7 @@
 <section id="association-discover-<?php echo uniqid(); ?>" class="association-discover">
     <div class="container">
         <?php if (get_field("association_discover_title", "options")) : ?>
-            <h2 class="h3-size"><?php echo get_field("association_discover_title", "options"); ?></h2>
+            <h2><?php echo get_field("association_discover_title", "options"); ?></h2>
         <?php endif; ?>
         <?php if (have_rows('association_discover_cards', "options")) : ?>
             <div class="cards-grid">
@@ -10,7 +10,8 @@
                     $label = get_sub_field('label');
                     $link = get_sub_field('link');
                     $background = get_sub_field('background'); ?>
-                    <?php if ((get_the_ID() !== url_to_postid($link)) && !((url_to_postid($link) == 0)) && (is_archive())) : ?>
+
+                    <?php if ((get_the_ID() !== url_to_postid($link)) && (is_archive() ? (url_to_postid($link) !== 0) : true)) : ?>
                         <a class="element card" href="<?php echo $link; ?>" style="background-image: url('<?php echo $background; ?>');">
                             <?php if ($label) : ?>
                                 <?php echo $label; ?>

@@ -1,0 +1,7 @@
+/* #Join Us (Workers)
+--------------------------------------------------------------- */
+.page-template-join-us-workers-template .discover {
+    margin: var(--spacing-section-outer) 0;
+    padding: var(--spacing-section-inner) 0;
+    background-color: var(--selago);
+}

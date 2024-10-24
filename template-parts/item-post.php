@@ -1,4 +1,4 @@
-<a href="<?php esc_url(the_permalink()); ?>" class="element post">
+<a href="<?php echo get_the_permalink(); ?>" class="element post">
     <?php if (has_post_thumbnail()) : ?>
         <div class="image">
             <?php the_post_thumbnail(); ?>

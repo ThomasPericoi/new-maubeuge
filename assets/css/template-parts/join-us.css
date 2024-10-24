@@ -1,0 +1,10 @@
+/* #Join Us
+--------------------------------------------------------------- */
+.join-us {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.join-us h2 {
+    margin-bottom: var(--spacing-title);
+    text-align: center;
+}

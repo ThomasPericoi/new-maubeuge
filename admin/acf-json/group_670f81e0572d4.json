@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_670f81e02acc8",
-            "label": "Chiffres-clés",
+            "label": "Grille de nombres \"Chiffres-clés\"",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -90,7 +90,7 @@
         },
         {
             "key": "field_670f89a15f3d9",
-            "label": "Contenu",
+            "label": "Rangée avec 2 colonnes \"Dynamiser votre développement\"",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -193,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729072217
+    "modified": 1729517604
 }

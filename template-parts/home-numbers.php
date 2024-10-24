@@ -5,7 +5,7 @@
             <h1 class="h2-size"><?php echo get_field("home_numbers_title"); ?></h1>
         <?php endif; ?>
         <?php if (get_field("home_numbers_text")) : ?>
-            <div class="text"><?php echo get_field("home_numbers_text"); ?></div>
+            <p><?php echo get_field("home_numbers_text"); ?><p>
         <?php endif; ?>
         <?php if (have_rows('home_numbers_numbers')) : ?>
             <div class="numbers-grid">

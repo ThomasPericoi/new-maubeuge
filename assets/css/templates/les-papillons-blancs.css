@@ -1,0 +1,21 @@
+/* #Les Papillons Blancs
+--------------------------------------------------------------- */
+.page-template-les-papillons-blancs-template .team-composition {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.page-template-les-papillons-blancs-template .team-composition > .container {
+    padding: var(--spacing-section-inner) 0;
+    background-color: var(--selago);
+    border-radius: var(--border-radius);
+}
+
+.page-template-les-papillons-blancs-template .team-composition h2 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.page-template-les-papillons-blancs-template .team-composition h2+p {
+    margin-bottom: var(--spacing-title);
+    text-align: center;
+}

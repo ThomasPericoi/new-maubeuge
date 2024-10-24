@@ -29,7 +29,7 @@
                                 <a class="btn btn-secondary btn-icon-<?php echo get_field("header_cta_primary_icon", "options"); ?>" href="<?php echo get_field('header_cta_primary', 'options')['url']; ?>"><?php echo get_field('header_cta_primary', 'options')['title']; ?></a>
                             <?php endif; ?>
                             <?php if (get_field('header_cta_secondary', 'options')) : ?>
-                                <a class="btn btn-icon-<?php echo get_field("header_cta_secondary_icon", "options"); ?>" href="<?php echo get_field('header_cta_primary', 'options')['url']; ?>"><?php echo get_field('header_cta_primary', 'options')['title'];; ?></a>
+                                <a class="btn btn-icon-<?php echo get_field("header_cta_secondary_icon", "options"); ?>" href="<?php echo get_field('header_cta_secondary', 'options')['url']; ?>"><?php echo get_field('header_cta_secondary', 'options')['title'];; ?></a>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>

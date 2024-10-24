@@ -11,8 +11,8 @@
     </div>
 </section>
 
-<!-- Content -->
-<section id="content">
+<!-- Loop -->
+<section id="loop-<?php echo uniqid(); ?>" class="loop">
     <div class="container">
 
         <?php if (have_posts()) : ?>

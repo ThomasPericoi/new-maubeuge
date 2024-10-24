@@ -1,0 +1,16 @@
+/* #Join Us (Supervisors)
+--------------------------------------------------------------- */
+.page-template-join-us-supervisors-template .hero {
+    margin-bottom: var(--spacing-section-outer);
+    padding: var(--spacing-section-inner) 0;
+    background-color: var(--selago);
+}
+
+.page-template-join-us-supervisors-template .jobs-description {
+    margin: var(--spacing-section-outer) 0;
+}
+
+.page-template-join-us-supervisors-template .jobs-description h2 {
+    margin-bottom: var(--spacing-title);
+    text-align: center;
+}
