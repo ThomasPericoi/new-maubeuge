@@ -17,7 +17,7 @@
     --secondary: var(--apple);
     --tertiary: var(--tory-blue);
 
-    --content-color: var(--primary);
+    --color-content: var(--primary);
 
     /* Fonts */
     --bold: "Volkhov", serif;

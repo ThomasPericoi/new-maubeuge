@@ -7,6 +7,13 @@
     text-align: center;
 }
 
+.parent-title {
+    margin-bottom: -5px;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 /* Project */
 .hero-project .thumbnail {
     width: 100%;

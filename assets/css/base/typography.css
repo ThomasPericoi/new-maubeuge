@@ -170,10 +170,3 @@ hr {
     border-top: 1px solid var(--primary);
     width: 250px;
 }
-
-.parent-title {
-    margin-bottom: -10px;
-    color: var(--secondary);
-    text-transform: uppercase;
-    font-weight: 500;
-}

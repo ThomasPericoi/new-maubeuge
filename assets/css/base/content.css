@@ -8,7 +8,7 @@
 
 /* List */
 .formatted p {
-    color: var(--content-color);
+    color: var(--color-content);
 }
 
 .formatted ul,
@@ -25,7 +25,7 @@
     align-items: flex-start;
     gap: 1rem;
     text-indent: 0;
-    color: var(--content-color);
+    color: var(--color-content);
 }
 
 .formatted ol>li {
@@ -40,13 +40,13 @@
 
 .formatted ul>li:before {
     content: "";
-    border: 3px solid var(--content-color);
+    border: 3px solid var(--color-content);
     border-radius: 50%;
 }
 
 .formatted ol>li:before {
     content: counter(item);
-    color: var(--content-color);
+    color: var(--color-content;
     font-weight: 700;
     transform: translateY(-70%);
 }
