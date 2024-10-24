@@ -14,7 +14,7 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/row-2-columns', 'large', array(
-    'color-theme' => "tory-blue",
+    'color-theme' => "var(--tory-blue)",
 )); ?>
 
 <!-- Team Composition -->
@@ -35,7 +35,7 @@ get_header(); ?>
     'content' => get_field("les_papillons_blancs_content_content"),
     'cta' => false,
     'image' => get_field("les_papillons_blancs_content_image"),
-    'color-theme' => "tory-blue",
+    'color-theme' => "var(--tory-blue)",
     'direction' => 'reverse'
 )); ?>
 

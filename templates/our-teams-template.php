@@ -14,7 +14,7 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/row-2-columns', 'large', array(
-    'color-theme' => "apple",
+    'color-theme' => "var(--apple)",
 )); ?>
 
 <!-- Workers -->

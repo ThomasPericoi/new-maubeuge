@@ -1,4 +1,4 @@
-<section id="row-2-columns-<?php echo uniqid(); ?>" class="row-2-columns row-2-columns-regular" style="--color-theme: var(--<?php echo $args['color-theme']; ?>);">
+<section id="row-2-columns-<?php echo uniqid(); ?>" class="row-2-columns row-2-columns-regular" style="--color-theme: <?php echo $args['color-theme']; ?>;">
     <div class="container">
         <div class="cols-wrapper <?php echo $args['direction']; ?>">
             <div class="col formatted">

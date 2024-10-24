@@ -34,7 +34,7 @@ get_header(); ?>
             'content' => $content,
             'cta' => false,
             'image' => $image,
-            'color-theme' => "apple",
+            'color-theme' => "var(--apple)",
             'direction' => $direction,
         )); ?>
 

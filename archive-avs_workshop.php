@@ -39,7 +39,7 @@
     'content' => get_field("workshops_content_content", "options"),
     'cta' => false,
     'image' => get_field("workshops_content_image", "options"),
-    'color-theme' => "apple",
+    'color-theme' => "var(--apple)",
     'direction' => 'reverse'
 )); ?>
 

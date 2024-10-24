@@ -13,7 +13,7 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/row-2-columns', 'large', array(
-    'color-theme' => "apple",
+    'color-theme' => "var(--apple)",
 )); ?>
 
 <!-- Discover  -->
@@ -36,7 +36,7 @@ get_header(); ?>
             'content' => $content,
             'cta' => false,
             'image' => $image,
-            'color-theme' => "apple",
+            'color-theme' => "var(--apple)",
             'direction' => $direction,
         )); ?>
 
