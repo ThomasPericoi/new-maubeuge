@@ -18,3 +18,17 @@
 .single-avs_job .introduction {
     text-align: left;
 }
+
+/* Teams */
+.single-avs_job .row-2-columns:not(:nth-child(2)):before {
+    content: "";
+    width: 25%;
+    height: auto;
+    aspect-ratio: 1;
+    position: absolute;
+    bottom: calc((var(--spacing-section-outer) * -2) - 1px);
+    left: -1px;
+    z-index: -1;
+    border: 1px solid var(--mercury);
+    border-radius: 0 70px 0 0;
+}

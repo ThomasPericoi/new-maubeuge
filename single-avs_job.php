@@ -40,4 +40,15 @@
     'direction' => 'reverse',
 )); ?>
 
+<?php get_template_part('template-parts/job-qualities'); ?>
+
+<?php get_template_part('template-parts/row-2-columns', 'regular', array(
+    'title' => get_field("teams_title"),
+    'content' => get_field("teams_content"),
+    'cta' => false,
+    'image' => get_field("teams_image"),
+    'color-theme' => get_field("block_color"),
+    'direction' => 'normal',
+)); ?>
+
 <?php get_footer(); ?>
