@@ -1,5 +1,115 @@
 /* #Testimonials Slider
 --------------------------------------------------------------- */
 .testimonials-slider {
-    margin: var(--spacing-section-outer) 0;
+  margin: var(--spacing-section-outer) 0;
+}
+
+.testimonials-slider > .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-title);
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials-slider > .container {
+    flex-direction: row;
+    gap: var(--spacing-section-inner);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials-slider h2 {
+    max-width: 280px;
+  }
+}
+
+/* Slider */
+.testimonials-slider .testimonials-list {
+  width: 100%;
+}
+
+.testimonials-slider .element {
+  width: 100%;
+  padding: 3rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--mercury);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.testimonials-slider .element header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials-slider .element header {
+    flex-direction: row;
+  }
+}
+
+.testimonials-slider .element header img {
+  max-width: 60px;
+  width: 100%;
+  max-height: 60px;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid var(--mercury);
+}
+
+.testimonials-slider .element blockquote {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.testimonials-slider .element blockquote:before,
+.testimonials-slider .element blockquote:after {
+  content: "“";
+  height: 25px;
+  position: absolute;
+  font-family: var(--bold);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.testimonials-slider .element blockquote:before {
+  left: 0;
+}
+
+.testimonials-slider .element blockquote:after {
+  right: 0;
+  bottom: 1rem;
+  transform: rotate(180deg);
+}
+
+/* Pagination */
+.testimonials-slider .pagination-wrapper {
+  margin-top: var(--spacing-section-inner);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.testimonials-slider [role="button"] {
+  margin-top: 0;
+  position: relative;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+  opacity: 1;
+  border-radius: 50%;
+  border: 1px solid var(--mercury);
+  box-sizing: border-box;
+}
+
+.testimonials-slider [role="button"].swiper-button-disabled {
+  opacity: 0.25;
 }

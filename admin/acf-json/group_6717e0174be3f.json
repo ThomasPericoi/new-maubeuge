@@ -466,6 +466,38 @@
             "append": ""
         },
         {
+            "key": "field_671f3d028176e",
+            "label": "Témoignages",
+            "name": "testimonials_testimonials",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Il est possible de réordonner les éléments en glissant \/ déposant.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "avs_testimonial"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
             "key": "field_671e8bc826ff8",
             "label": "5) CTA \"Faire une demande d’informations\"",
             "name": "",
@@ -731,5 +763,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730100473
+    "modified": 1730100807
 }

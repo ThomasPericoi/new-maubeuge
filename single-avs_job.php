@@ -42,6 +42,11 @@
 
 <?php get_template_part('template-parts/job-qualities'); ?>
 
+<?php get_template_part('template-parts/testimonials-slider', '', array(
+    'title' => get_field("testimonials_title"),
+    'testimonials' => get_field("testimonials_testimonials"),
+)); ?>
+
 <?php get_template_part('template-parts/job-cta-form'); ?>
 
 <?php get_template_part('template-parts/row-2-columns', 'regular', array(
