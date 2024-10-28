@@ -13,11 +13,14 @@ get_header(); ?>
     </div>
 </section>
 
-<?php get_template_part('template-parts/row-2-columns', 'large', array( 
+<?php get_template_part('template-parts/row-2-columns', 'large', array(
     'color-theme' => "var(--apple)",
 )); ?>
 
-<?php get_template_part('template-parts/testimonials-slider'); ?>
+<?php get_template_part('template-parts/testimonials-slider', '', array(
+    'title' => get_field("our_ecosystem_testimonials_title"),
+    'testimonials' => get_field("our_ecosystem_testimonials_testimonials"),
+)); ?>
 
 <?php get_template_part('template-parts/partners-grid'); ?>
 
