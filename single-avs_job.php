@@ -23,7 +23,7 @@
                         <?php echo get_field("introduction_content"); ?>
                     <?php endif; ?>
                 </div>
-                <div class="col">
+                <div id="job-form" class="col">
                     <p># TO DO : Formulaire</p>
                 </div>
             </div>
@@ -41,6 +41,8 @@
 )); ?>
 
 <?php get_template_part('template-parts/job-qualities'); ?>
+
+<?php get_template_part('template-parts/job-cta-form'); ?>
 
 <?php get_template_part('template-parts/row-2-columns', 'regular', array(
     'title' => get_field("teams_title"),

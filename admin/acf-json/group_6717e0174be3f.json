@@ -219,7 +219,7 @@
             "name": "introduction_content",
             "aria-label": "",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "Les sauts à la ligne sont pris en compte.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -445,6 +445,27 @@
             "selected": 0
         },
         {
+            "key": "field_671f3cd0f3ef1",
+            "label": "Titre de la section",
+            "name": "testimonials_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Nos partenaires témoignent",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_671e8bc826ff8",
             "label": "5) CTA \"Faire une demande d’informations\"",
             "name": "",
@@ -461,6 +482,95 @@
             "placement": "left",
             "endpoint": 0,
             "selected": 0
+        },
+        {
+            "key": "field_671ea55904629",
+            "label": "Titre de la section",
+            "name": "cta_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Faire une demande d’informations",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_671ea57f0462b",
+            "label": "Contenu de la section",
+            "name": "cta_form_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Les sauts à la ligne sont pris en compte.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_671ea5950462c",
+            "label": "Image de fond",
+            "name": "cta_form_background",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Un filtre est appliqué automatiquement.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_671ea5c50462d",
+            "label": "Label du CTA",
+            "name": "cta_form_cta_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Faire une demande d’informations",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_671e8be226ff9",
@@ -621,5 +731,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730057474
+    "modified": 1730100473
 }

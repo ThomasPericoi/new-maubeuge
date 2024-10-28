@@ -1,0 +1,36 @@
+/* #Job CTA Form
+--------------------------------------------------------------- */
+.job-cta-form {
+  margin: var(--spacing-section-outer) 0;
+}
+
+@media screen and (max-width: 787px) {
+  .job-cta-form {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.job-cta-form .inner {
+  min-height: 450px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffffb3;
+  background-blend-mode: color;
+  border-radius: var(--border-radius);
+}
+
+.job-cta-form h2 + p {
+  margin-top: 5px;
+}
+
+.job-cta-form .btn {
+  margin-top: var(--spacing-title);
+}

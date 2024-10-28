@@ -27,7 +27,6 @@ $args = [
     'capability_type' => 'page',
     'supports' => [
         'title',
-        'editor',
         'custom-fields',
     ],
     'taxonomies' => [],

@@ -289,7 +289,7 @@
                     "name": "background",
                     "aria-label": "",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "Un filtre est appliqué automatiquement.",
                     "required": 1,
                     "conditional_logic": [
                         [
@@ -948,5 +948,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730054431
+    "modified": 1730062694
 }
