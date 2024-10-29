@@ -80,8 +80,8 @@
 
 <?php get_template_part('template-parts/jobs-tabs', '', array(
     'button_style' => 'alternate',
-    'section_title' => false,
-    'section_text' => false,
+    'title' => false,
+    'text' => false,
     'jobs' => get_field("related_jobs"),
 )); ?>
 

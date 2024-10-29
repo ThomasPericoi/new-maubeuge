@@ -18,7 +18,7 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/insights-list', '', array(
-    'section_title' => get_field("join_us_insights_title"),
+    'title' => get_field("join_us_insights_title"),
 )); ?>
 
 <!-- Rows -->

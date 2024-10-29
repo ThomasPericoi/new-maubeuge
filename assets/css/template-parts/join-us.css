@@ -1,10 +1,29 @@
 /* #Join Us
 --------------------------------------------------------------- */
 .join-us {
-    margin: var(--spacing-section-outer) 0;
+  margin: var(--spacing-section-outer) 0;
 }
 
 .join-us h2 {
-    margin-bottom: var(--spacing-title);
-    text-align: center;
+  margin-bottom: var(--spacing-title);
+  text-align: center;
+}
+
+.join-us .cards {
+  align-items: flex-start;
+}
+
+.join-us .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.join-us .card .content {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

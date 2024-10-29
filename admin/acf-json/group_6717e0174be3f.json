@@ -709,6 +709,27 @@
             "selected": 0
         },
         {
+            "key": "field_671fe6604bd2e",
+            "label": "Titre de la section",
+            "name": "insights_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Les femmes et les hommes des Ateliers du Val de Sambre",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_671e8d0826ffb",
             "label": "8) Cartes pour rejoindre \"Cette filière métier vous intéresse ?\"",
             "name": "",
@@ -727,8 +748,146 @@
             "selected": 0
         },
         {
+            "key": "field_671fe978bb91e",
+            "label": "Titre de la section",
+            "name": "join_us_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Cette filière métier vous intéresse ?",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6720af38522f2",
+            "label": "Cartes de contenu",
+            "name": "join_us_cards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 2,
+            "max": 2,
+            "collapsed": "",
+            "button_label": "Ajouter une carte",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6720afd962952",
+                    "label": "Image de la carte",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Préférez des images du même ratio.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_6720af38522f2"
+                },
+                {
+                    "key": "field_6720af9662950",
+                    "label": "Titre de la carte",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6720af38522f2"
+                },
+                {
+                    "key": "field_6720afab62951",
+                    "label": "Texte de la carte",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 8,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_6720af38522f2"
+                },
+                {
+                    "key": "field_6720aff362953",
+                    "label": "Label du bouton",
+                    "name": "button_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6720af38522f2"
+                }
+            ]
+        },
+        {
             "key": "field_671e8d3126ffc",
-            "label": "9) Cartes d'ateliers \"Les ateliers\"",
+            "label": "9) Ateliers suggérés \"Les ateliers\"",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -743,6 +902,27 @@
             "placement": "left",
             "endpoint": 0,
             "selected": 0
+        },
+        {
+            "key": "field_671feb592a285",
+            "label": "Titre de la section",
+            "name": "related_workshops_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Les ateliers",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -763,5 +943,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730112105
+    "modified": 1730197568
 }

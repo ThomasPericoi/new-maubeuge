@@ -11,11 +11,11 @@ $jobs = get_posts(array(
 <?php if ($jobs) : ?>
     <section id="jobs-tabs-<?php echo uniqid(); ?>" class="jobs-tabs <?php echo $args['button_style']; ?>">
         <div class="container">
-            <?php if ($args['section_title']) : ?>
-                <h2><?php echo $args['section_title']; ?></h2>
+            <?php if ($args['title']) : ?>
+                <h2><?php echo $args['title']; ?></h2>
             <?php endif; ?>
-            <?php if ($args['section_text']) : ?>
-                <p><?php echo $args['section_text']; ?></p>
+            <?php if ($args['text']) : ?>
+                <p><?php echo $args['text']; ?></p>
             <?php endif; ?>
             <div class="jobs-tabs-wrapper">
                 <?php foreach ($jobs as $post) :

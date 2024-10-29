@@ -2,33 +2,38 @@
 --------------------------------------------------------------- */
 /* Hero */
 .single-avs_job .parent-title {
-    color: var(--color-theme);
+  color: var(--color-theme);
 }
 
 .single-avs_job .hero .thumbnail {
-    width: 100%;
-    height: 475px;
-    margin: 2rem 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 475px;
+  margin: 2rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Introduction */
 .single-avs_job .introduction {
-    text-align: left;
+  text-align: left;
 }
 
 /* Teams */
 .single-avs_job .row-2-columns:not(:nth-child(2)):before {
-    content: "";
-    width: 25%;
-    height: auto;
-    aspect-ratio: 1;
-    position: absolute;
-    bottom: calc((var(--spacing-section-outer) * -2) - 1px);
-    left: -1px;
-    z-index: -1;
-    border: 1px solid var(--mercury);
-    border-radius: 0 70px 0 0;
+  content: "";
+  width: 25%;
+  height: auto;
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: calc((var(--spacing-section-outer) * -1.5) - 1px);
+  left: -1px;
+  z-index: -1;
+  border: 1px solid var(--mercury);
+  border-radius: 0 70px 0 0;
+}
+
+.single-avs_job .row-2-columns:not(:nth-child(2)) + section {
+  position: relative;
+  z-index: -2;
 }

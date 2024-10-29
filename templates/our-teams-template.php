@@ -25,7 +25,8 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/join-us', '', array(
-    'section_title' => get_field("our_teams_join_title"),
+    'title' => get_field("our_teams_join_title"),
+    'cards' => get_field("our_teams_join_cards"),
 )); ?>
 
 <?php get_template_part('template-parts/association-discover'); ?>

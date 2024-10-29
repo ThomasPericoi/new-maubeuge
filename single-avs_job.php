@@ -58,4 +58,15 @@
     'direction' => 'normal',
 )); ?>
 
+<?php get_template_part('template-parts/insights-list', '', array(
+    'title' => get_field("insights_title"),
+)); ?>
+
+<?php get_template_part('template-parts/join-us', '', array(
+    'title' => get_field("join_us_title"),
+    'cards' => get_field("join_us_cards"),
+)); ?>
+
+<?php get_template_part('template-parts/job-related-workshops'); ?>
+
 <?php get_footer(); ?>

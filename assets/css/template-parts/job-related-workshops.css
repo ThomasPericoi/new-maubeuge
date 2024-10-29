@@ -1,0 +1,10 @@
+/* #Job Related Workshops
+--------------------------------------------------------------- */
+.job-related-workshops {
+  margin: var(--spacing-section-outer) 0;
+}
+
+.job-related-workshops h2 {
+  margin-bottom: var(--spacing-title);
+  text-align: center;
+}

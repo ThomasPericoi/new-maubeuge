@@ -19,8 +19,8 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/jobs-tabs', '', array(
     'button_style' => 'normal',
-    'section_title' => get_field("our_missions_jobs_tabs_title"),
-    'section_text' => get_field("our_missions_jobs_tabs_text"),
+    'title' => get_field("our_missions_jobs_tabs_title"),
+    'text' => get_field("our_missions_jobs_tabs_text"),
     'jobs' => 'all'
 )); ?>
 

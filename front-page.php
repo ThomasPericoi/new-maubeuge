@@ -4,8 +4,8 @@
 <?php get_template_part('template-parts/home-numbers'); ?>
 <?php get_template_part('template-parts/jobs-tabs', '', array(
     'button_style' => 'normal',
-    'section_title' => get_field("home_jobs_tabs_title"),
-    'section_text' => false,
+    'title' => get_field("home_jobs_tabs_title"),
+    'text' => false,
     'jobs' => 'all'
 )); ?>
 <?php get_template_part('template-parts/partners-grid'); ?>
@@ -20,7 +20,7 @@
 <?php get_template_part('template-parts/home-workshops'); ?> 
 <?php get_template_part('template-parts/latest-posts', '', array(
     'amount' => get_field("home_posts_amount"),
-    'section_title' => get_field("home_posts_title")
+    'title' => get_field("home_posts_title")
 )); ?>
 <?php get_template_part('template-parts/home-commitments'); ?>
 

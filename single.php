@@ -22,7 +22,7 @@
 
 <?php get_template_part('template-parts/latest-posts', '', array(
     'amount' => 3,
-    'section_title' => __("Nos dernières actualités", "new-maubeuge"),
+    'title' => __("Nos dernières actualités", "new-maubeuge"),
 )); ?>
 
 <?php get_footer(); ?>
