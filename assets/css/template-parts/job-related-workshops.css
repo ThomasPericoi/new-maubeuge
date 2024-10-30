@@ -8,3 +8,33 @@
   margin-bottom: var(--spacing-title);
   text-align: center;
 }
+
+.job-related-workshops .workshops-list .workshop {
+  border: 1px solid var(--mercury);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.job-related-workshops .workshops-list .workshop .thumbnail {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.job-related-workshops .workshops-list .workshop .content {
+  padding: 2rem;
+}
+
+.job-related-workshops .workshops-list .workshop span {
+  color: var(--color-theme);
+  font-weight: 700;
+  font-family: var(--bold);
+}
+
+.job-related-workshops .workshops-list .workshop h3 + div {
+  margin-top: 1rem;
+}

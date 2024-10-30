@@ -923,6 +923,38 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6721fd4ff9b9a",
+            "label": "Implantations sélectionnées",
+            "name": "related_workshops_workshops",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Le texte affiché sous le titre de chaque élément est renseigné dans le champs \"Extrait\" lors de la modification des éléments.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "avs_workshop"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "id",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -943,5 +975,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730197568
+    "modified": 1730312229
 }

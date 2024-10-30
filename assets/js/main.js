@@ -222,6 +222,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   );
 
+  // Page - Job
+  const swiperWorkshops = new Swiper(".job-related-workshops .workshops-list", {
+    autoHeight: true,
+    slidesPerView: 1.25,
+    spaceBetween: 32,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
   // Page - Page d'accueil
   const swiperHero = new Swiper(".home-hero-slider", {
     loop: true,
