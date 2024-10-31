@@ -19,6 +19,7 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/insights-list', '', array(
     'title' => get_field("join_us_insights_title"),
+    'insights' => get_field("join_us_insights_insights"),
 )); ?>
 
 <!-- Rows -->
@@ -27,7 +28,7 @@ get_header(); ?>
         $title = get_sub_field('title');
         $content = get_sub_field('content');
         $image = get_sub_field('image');
-        $direction = (get_row_index() % 2)? 'reverse': 'normal' ?>
+        $direction = (get_row_index() % 2) ? 'reverse' : 'normal' ?>
 
         <?php get_template_part('template-parts/row-2-columns', 'regular', array(
             'title' => $title,

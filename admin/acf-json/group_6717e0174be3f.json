@@ -692,7 +692,7 @@
         },
         {
             "key": "field_671e8c4626ffa",
-            "label": "7) Grille de témoignages \"Les femmes et les hommes…\"",
+            "label": "7) Grille de témoignages DUO \"Les femmes et les hommes…\"",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -728,6 +728,246 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_672345def2166",
+            "label": "Témoignages DUO",
+            "name": "insights_insights",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "Ajouter un témoignage",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6723475639f0e",
+                    "label": "Ouvrier",
+                    "name": "worker",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "parent_repeater": "field_672345def2166",
+                    "sub_fields": [
+                        {
+                            "key": "field_6723477839f0f",
+                            "label": "Portrait",
+                            "name": "portrait",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_672347a839f10",
+                            "label": "Témoignage",
+                            "name": "insight",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Les sauts à la ligne sont pris en compte.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_672347c939f11",
+                            "label": "Prénom et nom",
+                            "name": "name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_672347e239f12",
+                            "label": "Poste",
+                            "name": "job",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6723480439f13",
+                    "label": "Encadrant",
+                    "name": "supervisor",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "parent_repeater": "field_672345def2166",
+                    "sub_fields": [
+                        {
+                            "key": "field_6723480439f14",
+                            "label": "Portrait",
+                            "name": "portrait",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_6723480439f15",
+                            "label": "Témoignage",
+                            "name": "insight",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Les sauts à la ligne sont pris en compte.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_6723480439f16",
+                            "label": "Prénom et nom",
+                            "name": "name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6723480439f17",
+                            "label": "Poste",
+                            "name": "job",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "field_671e8d0826ffb",
@@ -930,7 +1170,7 @@
             "name": "related_workshops_workshops",
             "aria-label": "",
             "type": "relationship",
-            "instructions": "Le texte affiché sous le titre de chaque élément est renseigné dans le champs \"Extrait\" lors de la modification des éléments.",
+            "instructions": "Les éléments seront classés par ordre alphabétique.\r\nLe texte affiché sous le titre de chaque élément est renseigné dans le champs \"Extrait\" lors de la modification des éléments, de même que l'image est renseigné dans le champs \"Image mise en avant\".",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -975,5 +1215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730312229
+    "modified": 1730371387
 }

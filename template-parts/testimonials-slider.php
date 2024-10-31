@@ -4,7 +4,6 @@ $testimonials = get_posts(array(
     'post_type' => 'avs_testimonial',
     'post__in' => $args['testimonials'],
     'posts_per_page' => -1,
-    'order' => 'ASC',
 )); ?>
 
 <section id="testimonials-slider-<?php echo uniqid(); ?>" class="testimonials-slider">

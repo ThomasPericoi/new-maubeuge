@@ -60,6 +60,7 @@
 
 <?php get_template_part('template-parts/insights-list', '', array(
     'title' => get_field("insights_title"),
+    'insights' => get_field("insights_insights"),
 )); ?>
 
 <?php get_template_part('template-parts/join-us', '', array(
