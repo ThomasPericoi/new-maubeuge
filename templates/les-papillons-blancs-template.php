@@ -14,7 +14,13 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/row-2-columns', 'large', array(
+    'subtitle' => get_field("les_papillons_blancs_hero_subtitle"),
+    'title' => get_field("les_papillons_blancs_hero_title"),
+    'content' => get_field("les_papillons_blancs_hero_content"),
+    'cta' => false,
+    'image' => get_field("les_papillons_blancs_hero_image"),
     'color-theme' => "var(--tory-blue)",
+    'direction' => 'normal'
 )); ?>
 
 <!-- Team Composition -->

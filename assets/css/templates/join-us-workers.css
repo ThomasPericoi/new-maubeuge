@@ -1,5 +1,21 @@
 /* #Join Us (Workers)
 --------------------------------------------------------------- */
+/* Hero */
+.page-template-join-us-workers-template .row-2-columns-large:before {
+    content: "";
+    width: 25%;
+    min-width: 150px;
+    height: auto;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    border-radius: 0 10px 0 30px;
+    border: 1px solid var(--mercury);
+    z-index: -1;
+}
+
+/* Discover */
 .page-template-join-us-workers-template .discover {
     margin: var(--spacing-section-outer) 0;
     padding: var(--spacing-section-inner) 0;

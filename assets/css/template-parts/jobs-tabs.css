@@ -78,6 +78,16 @@
     display: block;
 }
 
+.jobs-tabs .col .icon {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .jobs-tabs .col .icon {
+        display: block;
+    }
+}
+
 /* Content */
 .jobs-tabs .job-tab-content {
     flex-basis: 100%;
