@@ -53,7 +53,7 @@
                     $portrait = get_sub_field('portrait');
                     $name = get_sub_field('name');
                     $description = get_sub_field('description'); ?>
-                    <div class="item member">
+                    <div class="element member">
                         <img src="<?php echo $portrait["url"]; ?>" alt="<?php echo $name; ?>">
                         <h4><?php echo $name; ?></h4>
                         <p><?php echo $description; ?></p>

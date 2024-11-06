@@ -48,7 +48,7 @@ h6,
     font-style: normal;
     font-family: var(--bold);
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.15;
     color: var(--primary);
     -webkit-font-smoothing: antialiased;
 }

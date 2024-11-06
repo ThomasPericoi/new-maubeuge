@@ -30,5 +30,67 @@
 
 .page-template-our-story-template .dates h2 {
     margin-bottom: var(--spacing-title);
-    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-story-template .dates h2 {
+        text-align: center;
+    }
+}
+
+.page-template-our-story-template .dates-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-template-our-story-template .dates-list .element {
+    padding: 0.75rem 0 0.75rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    border-left: 1px solid var(--mercury);
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-story-template .dates-list .element {
+        width: 50%;
+        padding: 0.75rem 3rem;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-story-template .dates-list .element:nth-child(even) {
+        align-self: flex-start;
+        text-align: right;
+        border-right: 1px solid var(--mercury);
+        border-left: none;
+    }
+}
+
+.page-template-our-story-template .dates-list .element:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    background-color: var(--selago);
+    border: 1px solid var(--mercury);
+    transform: rotate(45deg) translate(-100%, -50%);
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-story-template .dates-list .element:nth-child(even):after {
+        right: 4px;
+        left: unset;
+        transform: rotate(45deg) translate(50%, -50%);
+    }
+}
+
+.page-template-our-story-template .dates-list h3 {
+    color: var(--apple);
 }

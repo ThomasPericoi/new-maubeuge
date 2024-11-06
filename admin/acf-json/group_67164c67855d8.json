@@ -3,6 +3,24 @@
     "title": "Options de page - Notre histoire",
     "fields": [
         {
+            "key": "field_672b82d67e47e",
+            "label": "Rangée avec 2 larges colonnes \"Depuis 1979…\"",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
             "key": "field_672a2bdab0eae",
             "label": "Sous-titre de la section",
             "name": "our_story_hero_subtitle",
@@ -131,6 +149,96 @@
             "append": ""
         },
         {
+            "key": "field_672b83180ae44",
+            "label": "Dates clés",
+            "name": "our_story_dates_dates",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter une date",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_672b854d5ef92",
+                    "label": "Date",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_672b83180ae44"
+                },
+                {
+                    "key": "field_672b855e5ef93",
+                    "label": "Sous-titre",
+                    "name": "subtitle",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_672b83180ae44"
+                },
+                {
+                    "key": "field_672b85685ef94",
+                    "label": "Texte explicatif",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Les sauts à la ligne sont pris en compte.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 6,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_672b83180ae44"
+                }
+            ]
+        },
+        {
             "key": "field_67164c67b691a",
             "label": "Rangée avec 2 colonnes",
             "name": "",
@@ -235,5 +343,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730823017
+    "modified": 1730905486
 }

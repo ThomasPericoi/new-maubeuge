@@ -23,15 +23,34 @@ get_header(); ?>
     'direction' => 'normal'
 )); ?>
 
-<!-- Dates -->
-<section id="dates-<?php echo uniqid(); ?>" class="dates">
-    <div class="container">
-        <?php if (get_field("our_story_dates_title")) : ?>
-            <h2><?php echo get_field("our_story_dates_title"); ?></h2>
-        <?php endif; ?>
-        <p># TO DO : Les grandes dates</p>
-    </div>
-</section>
+<?php if (have_rows('our_story_dates_dates')) : ?>
+    <!-- Dates -->
+    <section id="dates-<?php echo uniqid(); ?>" class="dates">
+        <div class="container">
+            <?php if (get_field("our_story_dates_title")) : ?>
+                <h2><?php echo get_field("our_story_dates_title"); ?></h2>
+            <?php endif; ?>
+            <div class="dates-list">
+                <?php while (have_rows('our_story_dates_dates')) : the_row();
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('subtitle');
+                    $text = get_sub_field('text'); ?>
+                    <div class="element date">
+                        <?php if ($title) : ?>
+                            <h3 class="h1-size"><?php echo $title; ?></h3>
+                        <?php endif; ?>
+                        <?php if ($subtitle) : ?>
+                            <h4 class="h3-size"><?php echo $subtitle; ?></h4>
+                        <?php endif; ?>
+                        <?php if ($text) : ?>
+                            <p><?php echo $text; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
 <?php get_template_part('template-parts/row-2-columns', 'regular', array(
     'title' => get_field("our_story_content_title"),

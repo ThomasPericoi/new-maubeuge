@@ -49,18 +49,20 @@ endif;
             <?php if (get_field("index_facebook_iframe", get_option('page_for_posts'))) : ?>
                 <div class="sidebar">
                     <?php echo get_field("index_facebook_iframe", get_option('page_for_posts')); ?>
-                    <div class="socials-wrapper">
-                        <h3 class="h6-size"><?php echo __("Suivez nous sur les réseaux sociaux", "new-maubeuge"); ?></h3>
-                        <div class="socials">
-                            <?php while (have_rows('footer_socials', 'options')) : the_row();
-                                $icon = get_sub_field('icon');
-                                $link = get_sub_field('link'); ?>
-                                <a href="<?php echo $link; ?>" target="_blank" class="social">
-                                    <?php get_template_part('assets/icons/socials/' . $icon . '.svg'); ?>
-                                </a>
-                            <?php endwhile; ?>
+                    <?php if (have_rows('footer_socials', 'options')) : ?>
+                        <div class="socials-wrapper">
+                            <h3 class="h6-size"><?php echo __("Suivez nous sur les réseaux sociaux", "new-maubeuge"); ?></h3>
+                            <div class="socials">
+                                <?php while (have_rows('footer_socials', 'options')) : the_row();
+                                    $icon = get_sub_field('icon');
+                                    $link = get_sub_field('link'); ?>
+                                    <a href="<?php echo $link; ?>" target="_blank" class="social">
+                                        <?php get_template_part('assets/icons/socials/' . $icon . '.svg'); ?>
+                                    </a>
+                                <?php endwhile; ?>
+                            </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
         </div>

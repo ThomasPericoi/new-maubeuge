@@ -22,15 +22,17 @@
                     <a class="btn btn-icon-<?php echo get_field("footer_cta_secondary_icon", "options"); ?>" href="<?php echo get_field("footer_cta_secondary", "options")["url"]; ?>"><?php echo get_field("footer_cta_secondary", "options")["title"]; ?></a>
                 <?php endif; ?>
 
-                <div class="socials">
-                    <?php while (have_rows('footer_socials', 'options')) : the_row();
-                        $icon = get_sub_field('icon');
-                        $link = get_sub_field('link'); ?>
-                        <a href="<?php echo $link; ?>" target="_blank" class="social">
-                            <?php get_template_part('assets/icons/socials/' . $icon . '.svg'); ?>
-                        </a>
-                    <?php endwhile; ?>
-                </div>
+                <?php if (have_rows('footer_socials', 'options')) : ?>
+                    <div class="socials">
+                        <?php while (have_rows('footer_socials', 'options')) : the_row();
+                            $icon = get_sub_field('icon');
+                            $link = get_sub_field('link'); ?>
+                            <a href="<?php echo $link; ?>" target="_blank" class="social">
+                                <?php get_template_part('assets/icons/socials/' . $icon . '.svg'); ?>
+                            </a>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
             </div>
 
             <?php if (has_nav_menu('footer-menu-1')) : ?>
