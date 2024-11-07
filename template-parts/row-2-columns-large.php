@@ -2,6 +2,9 @@
     <div class="container container-lg">
         <div class="cols-wrapper <?php echo $args['direction']; ?>">
             <div class="col formatted">
+                <?php if ($args['logo']) : ?>
+                    <img src="<?php echo $args['logo']['url']; ?>" alt="<?php echo $args['logo']['title']; ?>">
+                <?php endif; ?>
                 <?php if ($args['subtitle']) : ?>
                     <span class="subtitle"><?php echo $args['subtitle']; ?></span>
                 <?php endif; ?>

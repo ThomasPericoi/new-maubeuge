@@ -14,6 +14,7 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/row-2-columns', 'large', array(
+    'logo' => get_field("les_papillons_blancs_hero_logo"),
     'subtitle' => get_field("les_papillons_blancs_hero_subtitle"),
     'title' => get_field("les_papillons_blancs_hero_title"),
     'content' => get_field("les_papillons_blancs_hero_content"),
@@ -23,18 +24,25 @@ get_header(); ?>
     'direction' => 'normal'
 )); ?>
 
-<!-- Team Composition -->
-<section id="team-composition-<?php echo uniqid(); ?>" class="team-composition">
-    <div class="container container-lg">
-        <?php if (get_field("les_papillons_blancs_composition_title")) : ?>
-            <h2><?php echo get_field("les_papillons_blancs_composition_title"); ?></h2>
-        <?php endif; ?>
-        <?php if (get_field("les_papillons_blancs_composition_text")) : ?>
-            <p><?php echo get_field("les_papillons_blancs_composition_text"); ?></p>
-        <?php endif; ?>
-        <p># TO DO : La grille d</p>
-    </div>
-</section>
+<?php if (have_rows('les_papillons_blancs_composition_gallery')) : ?>
+    <!-- Team Composition -->
+    <section id="team-composition-<?php echo uniqid(); ?>" class="team-composition">
+        <div class="container container-lg">
+            <?php if (get_field("les_papillons_blancs_composition_title")) : ?>
+                <h2><?php echo get_field("les_papillons_blancs_composition_title"); ?></h2>
+            <?php endif; ?>
+            <?php if (get_field("les_papillons_blancs_composition_text")) : ?>
+                <p><?php echo get_field("les_papillons_blancs_composition_text"); ?></p>
+            <?php endif; ?>
+            <div class="gallery">
+                <?php while (have_rows('les_papillons_blancs_composition_gallery')) : the_row();
+                    $image = get_sub_field('image'); ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
 <?php get_template_part('template-parts/row-2-columns', 'regular', array(
     'title' => get_field("les_papillons_blancs_content_title"),

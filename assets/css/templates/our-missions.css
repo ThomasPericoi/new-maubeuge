@@ -25,7 +25,31 @@
     text-align: center;
 }
 
-.page-template-our-missions-template .our-values h2 + p {
+.page-template-our-missions-template .our-values h2+p {
     margin-bottom: var(--spacing-title);
     text-align: center;
-} 
+}
+
+.page-template-our-missions-template .our-values .values-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .page-template-our-missions-template .our-values .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.page-template-our-missions-template .our-values .values-grid .element {
+    min-height: 200px;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--harp);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}

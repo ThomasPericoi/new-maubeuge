@@ -18,10 +18,11 @@
 /* Team Composition */
 .page-template-les-papillons-blancs-template .team-composition {
     margin: var(--spacing-section-outer) 0;
+    overflow: hidden;
 }
 
 .page-template-les-papillons-blancs-template .team-composition>.container {
-    padding: var(--spacing-section-inner) 0;
+    padding: var(--spacing-section-inner) 1rem;
     background-color: var(--selago);
     border-radius: var(--border-radius);
 }
@@ -34,4 +35,20 @@
 .page-template-les-papillons-blancs-template .team-composition h2+p {
     margin-bottom: var(--spacing-title);
     text-align: center;
+}
+
+.page-template-les-papillons-blancs-template .team-composition .gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.page-template-les-papillons-blancs-template .team-composition .gallery img {
+    width: auto;
+    height: 156px;
+    display: block;
+    border-radius: 8px;
 }

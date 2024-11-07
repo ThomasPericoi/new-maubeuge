@@ -21,6 +21,32 @@
             "selected": 0
         },
         {
+            "key": "field_672ca042e0dd6",
+            "label": "Logo",
+            "name": "les_papillons_blancs_hero_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
             "key": "field_672a479a55c84",
             "label": "Sous-titre de la section",
             "name": "les_papillons_blancs_hero_subtitle",
@@ -170,6 +196,57 @@
             "new_lines": ""
         },
         {
+            "key": "field_672ca423f3f8d",
+            "label": "Photos de la galerie",
+            "name": "les_papillons_blancs_composition_gallery",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Les images auront automatiquement la même hauteur. Le ratio est donc important.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 5,
+            "collapsed": "",
+            "button_label": "Ajouter un élément de la galerie",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_672ca6bbf3f8e",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 1,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_672ca423f3f8d"
+                }
+            ]
+        },
+        {
             "key": "field_671661530c944",
             "label": "Rangée avec 2 colonnes \"En savoir plus\"",
             "name": "",
@@ -274,5 +351,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730825370
+    "modified": 1730980271
 }

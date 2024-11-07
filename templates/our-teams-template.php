@@ -14,6 +14,7 @@ get_header(); ?>
 </section>
 
 <?php get_template_part('template-parts/row-2-columns', 'large', array(
+    'logo' => false,
     'subtitle' => get_field("our_teams_hero_subtitle"),
     'title' => get_field("our_teams_hero_title"),
     'content' => get_field("our_teams_hero_content"),

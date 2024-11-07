@@ -11,6 +11,13 @@
 }
 
 /* Content */
+.row-2-columns-large .formatted img {
+    width: 100%;
+    max-width: 105px;
+    height: auto;
+    display: block;
+}
+
 .row-2-columns-large .formatted .subtitle {
     margin-bottom: -1rem;
     color: var(--color-theme);
