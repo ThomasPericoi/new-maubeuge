@@ -39,7 +39,7 @@ get_header(); ?>
             <h2><?php echo get_field("our_ecosystem_become_partner_title"); ?></h2>
         <?php endif; ?>
         <?php if (get_field("our_ecosystem_become_partner_text")) : ?>
-            <p><?php echo get_field("our_ecosystem_become_partner_text"); ?></p>
+            <p class="h5-size"><?php echo get_field("our_ecosystem_become_partner_text"); ?></p>
         <?php endif; ?>
         <?php if (get_field("our_ecosystem_become_partner_cards")) : ?>
             <div class="cards-grid">

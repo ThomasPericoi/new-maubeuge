@@ -18,4 +18,87 @@
 /* Workers*/
 .page-template-our-teams-template .workers {
     margin: var(--spacing-section-outer) 0;
+    position: relative;
+}
+
+.page-template-our-teams-template .workers:before {
+    content: "";
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1;
+    position: absolute;
+    top: calc((var(--spacing-section-outer)* -1) - 1px);
+    left: -1px;
+    z-index: -1;
+    border: 1px solid var(--mercury);
+    border-radius: 10px 0 70px 0;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-teams-template .workers .col:first-child {
+        max-width: 40%;
+    }
+}
+
+.page-template-our-teams-template .workers .subtitle {
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-template-our-teams-template .workers h2>span {
+    color: var(--apple);
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-teams-template .workers .formatted>div:first-child {
+        margin-bottom: 3rem;
+    }
+}
+
+.page-template-our-teams-template .workers .formatted h3 {
+    font-size: 20px;
+    font-family: var(--body);
+}
+
+@media screen and (min-width: 768px) {
+
+    .page-template-our-teams-template .workers .formatted h3 {
+        font-size: 24px;
+    }
+}
+
+.page-template-our-teams-template .workers .sectors-grid {
+    display: grid;
+    grid-gap: var(--spacing-section-inner);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-teams-template .workers .sectors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
+
+.page-template-our-teams-template .workers .element {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-teams-template .workers .element:nth-of-type(2n+2) {
+        top: 4rem;
+        position: relative;
+    }
+}
+
+.page-template-our-teams-template .workers .element img {
+    max-width: 58px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
