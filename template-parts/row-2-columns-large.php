@@ -14,6 +14,14 @@
                 <?php if ($args['content']) : ?>
                     <?php echo $args['content']; ?>
                 <?php endif; ?>
+                <?php if ($args['details']) : ?>
+                    <?php foreach ($args["details"] as $key => $details) : ?>
+                        <details>
+                            <summary><h3 class="h5-size"><?php echo $details["title"]; ?></h3></summary>
+                            <?php echo $details["content"]; ?>
+                        </details>
+                    <?php endforeach; ?>
+                <?php endif; ?>
                 <?php if ($args['cta']) : ?>
                     <a class="btn btn-secondary" href="<?php echo $args['cta']["url"]; ?>"><?php echo $args['cta']["title"]; ?></a>
                 <?php endif; ?>

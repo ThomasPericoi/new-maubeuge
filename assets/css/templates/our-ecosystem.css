@@ -5,8 +5,33 @@
     margin: var(--spacing-section-outer) 0;
 }
 
+.page-template-our-ecosystem-template .become-partner h2 {
+    margin-bottom: 5px;
+}
+
 .page-template-our-ecosystem-template .become-partner h2+p {
-    margin-bottom: var(--spacing-title);
+    margin-bottom: var(--spacing-section-inner);
+}
+
+.page-template-our-ecosystem-template .become-partner .cards-grid {
+    margin-bottom: var(--spacing-section-inner);
+    display: grid;
+    grid-gap: var(--spacing-section-inner);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-our-ecosystem-template .become-partner .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.page-template-our-ecosystem-template .become-partner .cards-grid .element {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-left: 2px solid var(--apple);
 }
 
 /* CTA */
@@ -17,6 +42,36 @@
 }
 
 .page-template-our-ecosystem-template .cta h2 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.page-template-our-ecosystem-template .cta h2+p {
     margin-bottom: var(--spacing-title);
     text-align: center;
+}
+
+.page-template-our-ecosystem-template .cta .address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.page-template-our-ecosystem-template .cta .address-wrapper svg {
+    width: 100%;
+    max-width: 32px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.page-template-our-ecosystem-template .cta .address-wrapper h3 {
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.page-template-our-ecosystem-template .cta .address-wrapper a {
+    color: var(--primary)
 }

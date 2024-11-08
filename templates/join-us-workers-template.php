@@ -17,6 +17,7 @@ get_header(); ?>
     'subtitle' => get_field("join_us_workers_hero_subtitle"),
     'title' => get_field("join_us_workers_hero_title"),
     'content' => get_field("join_us_workers_hero_content"),
+    'details' => false,
     'cta' => get_field("join_us_workers_hero_cta"),
     'image' => get_field("join_us_workers_hero_image"),
     'color-theme' => "var(--apple)",

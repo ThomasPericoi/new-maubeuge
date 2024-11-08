@@ -23,16 +23,16 @@
     }
 }
 
-.row-2-columns .formatted ul {
+.row-2-columns .formatted>ul {
     gap: 1.5rem;
 }
 
-.row-2-columns .formatted ul>li {
+.row-2-columns .formatted>ul>li {
     padding: 0;
     align-items: center;
 }
 
-.row-2-columns .formatted ul>li:before {
+.row-2-columns .formatted>ul>li:before {
     content: url("../../icons/check.svg");
     width: 30px;
     height: 26px;
@@ -42,6 +42,53 @@
     display: block;
     border: 0;
     border-radius: 0;
+}
+
+/* Details */
+.row-2-columns .formatted details {
+    width: 100%;
+    border-bottom: 1px solid var(--mercury);
+    transition: border-color ease 350ms;
+}
+
+.row-2-columns .formatted details[open] {
+    border-color: var(--apple);
+}
+
+.row-2-columns .formatted details>summary {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    list-style: none;
+    border-bottom: 1px solid var(--bay-of-many);
+    cursor: pointer;
+    transition: color ease 350ms;
+}
+
+.row-2-columns .formatted details>summary:after {
+    content: '+';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
+    transition: transform ease 350ms;
+}
+
+.row-2-columns .formatted details[open]>summary:after {
+    transform: rotate(45deg);
+}
+
+.row-2-columns .formatted details>summary h3 {
+    color: var(--primary);
+}
+
+.row-2-columns-large .formatted details ul>li:before {
+    filter: none;
+}
+
+.row-2-columns .formatted details>*:last-child {
+    padding-bottom: 1rem;
 }
 
 /* Image */
