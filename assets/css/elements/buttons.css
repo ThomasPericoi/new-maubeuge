@@ -89,6 +89,14 @@
     background-image: url(../../icons/envelop.svg);
 }
 
+.btn-icon-linkedin:after {
+    background-image: url(../../icons/linkedin.svg);
+}
+
+.btn-icon-pdf:after {
+    background-image: url(../../icons/pdf.svg);
+}
+
 .btn-icon-user:after {
     background-image: url(../../icons/user.svg);
 }

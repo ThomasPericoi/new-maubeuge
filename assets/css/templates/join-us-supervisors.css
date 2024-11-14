@@ -6,6 +6,66 @@
     background-color: var(--selago);
 }
 
+/* Jobs List */
+.page-template-join-us-supervisors-template .jobs-list {
+    margin-top: var(--spacing-section-outer);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.page-template-join-us-supervisors-template .jobs-list .job {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-join-us-supervisors-template .jobs-list .job {
+        flex-direction: row;
+    }
+}
+
+.page-template-join-us-supervisors-template .jobs-list .job .col:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.page-template-join-us-supervisors-template .jobs-list .job .informations {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.page-template-join-us-supervisors-template .job .informations>div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.page-template-join-us-supervisors-template .job .informations>div svg {
+    width: 100%;
+    max-width: 32px;
+    height: auto;
+}
+
+.page-template-join-us-supervisors-template .job .btn-wrapper {
+    justify-content: flex-end;
+}
+
+.page-template-join-us-supervisors-template .job .btn-icon-linkedin {
+    background-color: #0B65C2;
+}
+
+/* Jobs Description */
 .page-template-join-us-supervisors-template .jobs-description {
     margin: var(--spacing-section-outer) 0;
 }
@@ -13,4 +73,32 @@
 .page-template-join-us-supervisors-template .jobs-description h2 {
     margin-bottom: var(--spacing-title);
     text-align: center;
+}
+
+.page-template-join-us-supervisors-template .jobs-description .jobs-description-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-join-us-supervisors-template .jobs-description .jobs-description-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.page-template-join-us-supervisors-template .jobs-description .job-description {
+    padding: 2rem;
+    background-color: var(--harp);
+    border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-join-us-supervisors-template .jobs-description .job-description:nth-child(1) {
+        grid-row-start: span 2;
+    }
+}
+
+.page-template-join-us-supervisors-template .jobs-description .job-description h3 {
+    color: var(--apple);
 }
