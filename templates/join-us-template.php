@@ -43,8 +43,8 @@ get_header(); ?>
     'insights' => get_field("join_us_insights_insights"),
 )); ?>
 
-<!-- Rows -->
 <?php if (have_rows('join_us_content_rows')) : ?>
+    <!-- Rows -->
     <?php while (have_rows('join_us_content_rows')) : the_row();
         $title = get_sub_field('title');
         $content = get_sub_field('content');

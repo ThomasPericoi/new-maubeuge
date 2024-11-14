@@ -24,12 +24,28 @@ get_header(); ?>
     'direction' => 'reverse'
 )); ?>
 
-<!-- Discover  -->
-<section id="discover-<?php echo uniqid(); ?>" class="discover">
-    <div class="container">
-        <p># TO DO</p>
-    </div>
-</section>
+<?php if (have_rows('join_us_workers_cards')) : ?>
+    <!-- Discover  -->
+    <section id="discover-<?php echo uniqid(); ?>" class="discover">
+        <div class="container">
+            <div class="cols-wrapper">
+
+                <?php while (have_rows('join_us_workers_cards')) : the_row();
+                    $background = get_sub_field('background');
+                    $title = get_sub_field('title');
+                    $text = get_sub_field('text');
+                    $link = get_sub_field('link'); ?>
+                    <div class="col">
+                        <a href="<?php echo $link; ?>" class="card" style="background-image: url('<?php echo $background; ?>');">
+                            <h2 class="h3-size"><?php echo $title; ?></h2>
+                        </a>
+                    </div>
+                <?php endwhile; ?>
+
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
 <!-- Rows -->
 <?php if (have_rows('join_us_workers_content_rows')) : ?>
@@ -37,7 +53,7 @@ get_header(); ?>
         $title = get_sub_field('title');
         $content = get_sub_field('content');
         $image = get_sub_field('image');
-        $direction = (get_row_index() % 2)? 'reverse': 'normal' ?>
+        $direction = (get_row_index() % 2) ? 'reverse' : 'normal' ?>
 
         <?php get_template_part('template-parts/row-2-columns', 'regular', array(
             'title' => $title,

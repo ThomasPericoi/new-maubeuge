@@ -18,13 +18,15 @@
     }
 }
 
-.cols-wrapper>div {
+.cols-wrapper>div,
+.cols-wrapper>a {
     width: 100%;
     flex: 1 1 0;
 }
 
 @media screen and (min-width: 992px) {
-    .cols-wrapper>div {
+    .cols-wrapper>div,
+    .cols-wrapper>a {
         max-width: 50%;
     }
 }

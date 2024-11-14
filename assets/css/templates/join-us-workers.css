@@ -21,3 +21,51 @@
     padding: var(--spacing-section-inner) 0;
     background-color: var(--selago);
 }
+
+.page-template-join-us-workers-template .discover .cols-wrapper {
+    align-items: stretch;
+}
+
+.page-template-join-us-workers-template .discover .col {
+    position: relative;
+}
+
+.page-template-join-us-workers-template .discover .col:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    bottom: -20px;
+    left: -20px;
+    border: 1px solid var(--mercury);
+    border-radius: 0 10px 0 24px;
+}
+
+.page-template-join-us-workers-template .discover .col:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: 10%;
+    border-radius: 24px 0 10px 0;
+}
+
+.page-template-join-us-workers-template .discover .card {
+    min-height: 300px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00000040;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.page-template-join-us-workers-template .discover .card h2 {
+    color: var(--white);
+}
