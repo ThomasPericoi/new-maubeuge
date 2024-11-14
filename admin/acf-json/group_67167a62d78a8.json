@@ -21,6 +21,27 @@
             "selected": 0
         },
         {
+            "key": "field_6735c81378477",
+            "label": "Texte d'introduction",
+            "name": "join_us_hero_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Les sauts à la ligne sont pris en compte.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_67167a62dce17",
             "label": "Paire de cartes \"En savoir plus\"",
             "name": "",
@@ -37,6 +58,128 @@
             "placement": "left",
             "endpoint": 0,
             "selected": 0
+        },
+        {
+            "key": "field_6735ca1106110",
+            "label": "Cartes",
+            "name": "join_us_cards_cards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Maximum 2 cartes.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 2,
+            "max": 2,
+            "collapsed": "",
+            "button_label": "Ajouter une carte",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6735cb24a422a",
+                    "label": "Image de fond",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_6735ca1106110"
+                },
+                {
+                    "key": "field_6735ca6106111",
+                    "label": "Titre de la carte",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6735ca1106110"
+                },
+                {
+                    "key": "field_6735ca8e06112",
+                    "label": "Texte de la carte",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_6735ca1106110"
+                },
+                {
+                    "key": "field_6735caa106113",
+                    "label": "Lien du bouton",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_6735ca1106110"
+                }
+            ]
         },
         {
             "key": "field_67167a9fc4a80",
@@ -114,6 +257,7 @@
                         "id": ""
                     },
                     "layout": "block",
+                    "parent_repeater": "field_67234866fd272",
                     "sub_fields": [
                         {
                             "key": "field_67234866fd274",
@@ -129,7 +273,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "library": "all",
                             "min_width": "",
                             "min_height": "",
@@ -204,8 +348,7 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ],
-                    "parent_repeater": "field_67234866fd272"
+                    ]
                 },
                 {
                     "key": "field_67234866fd278",
@@ -222,6 +365,7 @@
                         "id": ""
                     },
                     "layout": "block",
+                    "parent_repeater": "field_67234866fd272",
                     "sub_fields": [
                         {
                             "key": "field_67234866fd279",
@@ -312,8 +456,7 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ],
-                    "parent_repeater": "field_67234866fd272"
+                    ]
                 }
             ]
         },
@@ -449,5 +592,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730365616
+    "modified": 1731578705
 }

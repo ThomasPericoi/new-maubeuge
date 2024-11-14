@@ -1,5 +1,42 @@
 /* #Join Us
 --------------------------------------------------------------- */
+.page-template-join-us-template .hero h1+p {
+    margin-top: 5px;
+}
+
+/* Dispatch */
 .page-template-join-us-template .dispatch {
-    margin: var(--spacing-section-outer) 0;
+    margin: var(--spacing-section-outer) 0 calc(var(--spacing-section-outer) * -1) 0;
+}
+
+.page-template-join-us-template .dispatch .cols-wrapper {
+    gap: 0;
+    align-items: stretch;
+}
+
+.page-template-join-us-template .dispatch .card {
+    aspect-ratio: 1;
+    text-decoration: none;
+    background-color: #00000035;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-template-join-us-template .dispatch .card .container {
+    height: 100%;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+.page-template-join-us-template .dispatch .card h2,
+.page-template-join-us-template .dispatch .card p {
+    color: var(--white);
 }
