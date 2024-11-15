@@ -27,15 +27,21 @@ get_header(); ?>
                 <div id="contact-map">
                 </div>
                 <div class="informations">
-                    <div class="location">
-                        <?php get_template_part('assets/icons/location-circled.svg'); ?><div><?php echo get_field("contact_informations_address"); ?></div>
-                    </div>
-                    <div class="telephone">
-                    <?php get_template_part('assets/icons/telephone-circled.svg'); ?><div><?php echo get_field("contact_informations_telephone"); ?></div>
-                    </div>
-                    <div class="mail">
-                    <?php get_template_part('assets/icons/email-circled.svg'); ?><div><?php echo get_field("contact_informations_email"); ?></div>
-                    </div>
+                    <?php if (get_field("contact_informations_address")) : ?>
+                        <div class="location">
+                            <?php get_template_part('assets/icons/location-circled.svg'); ?><div><?php echo get_field("contact_informations_address"); ?></div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if (get_field("contact_informations_telephone")) : ?>
+                        <div class="telephone">
+                            <?php get_template_part('assets/icons/telephone-circled.svg'); ?><a href="tel:<?php echo get_field("contact_informations_telephone"); ?>"><?php echo get_field("contact_informations_telephone"); ?></a>
+                        </div>
+                    <?php endif; ?>
+                    <?php if (get_field("contact_informations_email")) : ?>
+                        <div class="mail">
+                            <?php get_template_part('assets/icons/email-circled.svg'); ?><a href="mailto:<?php echo get_field("contact_informations_email"); ?>"><?php echo get_field("contact_informations_email"); ?></a>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

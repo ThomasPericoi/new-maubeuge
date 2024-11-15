@@ -40,3 +40,8 @@
     max-width: 32px;
     height: auto;
 }
+
+.page-template-contact-page-template .informations>div a {
+    text-decoration: none;
+    color: var(--primary);
+}
