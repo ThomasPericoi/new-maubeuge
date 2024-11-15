@@ -3,3 +3,40 @@
 .page-template-contact-page-template .contact {
     margin: var(--spacing-section-outer) 0;
 }
+
+.page-template-contact-page-template .cols-wrapper {
+    align-items: flex-start;
+}
+
+/* Form */
+.page-template-contact-page-template .form h2 {
+    margin-bottom: var(--spacing-title);
+}
+
+/* Informations */
+.page-template-contact-page-template #contact-map {
+    margin-bottom: 2rem;
+    aspect-ratio: 1;
+    border-radius: var(--border-radius);
+}
+
+.page-template-contact-page-template .informations {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--harp);
+    border-radius: var(--border-radius);
+}
+
+.page-template-contact-page-template .informations>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-template-contact-page-template .informations>div svg {
+    width: 100%;
+    max-width: 32px;
+    height: auto;
+}

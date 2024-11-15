@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .setAttribute(
             "aria-hidden",
             !(document.querySelector("main").getAttribute("aria-hidden") ==
-            "true"
+              "true"
               ? true
               : false)
           );
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .setAttribute(
           "aria-hidden",
           !(document.querySelector("footer").getAttribute("aria-hidden") ==
-          "true"
+            "true"
             ? true
             : false)
         );
@@ -150,14 +150,14 @@ document.addEventListener("DOMContentLoaded", function () {
         .classList.remove("visible");
     document
       .querySelectorAll(".jobs-tabs .job-tab-content")
-      [index].classList.add("visible");
+    [index].classList.add("visible");
     document.querySelector(".jobs-tabs .job-tab-button.selected") &&
       document
         .querySelector(".jobs-tabs .job-tab-button.selected")
         .classList.remove("selected");
     document
       .querySelectorAll(".jobs-tabs .job-tab-button")
-      [index].classList.add("selected");
+    [index].classList.add("selected");
   }
 
   document
@@ -221,6 +221,17 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     }
   );
+
+  // Page - Contact Page
+  if (document.querySelector("#contact-map")) {
+    const contactMap = L.map("contact-map", { zoomControl: false, scrollWheelZoom: false }).setView([50.252131, 3.906879], 13);
+    L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(contactMap);
+
+    L.marker([50.252131, 3.906879]).addTo(contactMap);
+  }
 
   // Page - Job
   const swiperWorkshops = new Swiper(".job-related-workshops .workshops-list", {
