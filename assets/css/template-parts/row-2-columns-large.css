@@ -1,6 +1,7 @@
 /* #Row 2 Columns (Large)
 --------------------------------------------------------------- */
 .row-2-columns-large {
+    position: relative;
     overflow: hidden;
 }
 

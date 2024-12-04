@@ -5,33 +5,20 @@
     position: relative;
 }
 
-@media screen and (max-width: 991px) {
-    .post-type-archive-avs_workshop .map {
-        position: unset;
-    }
-}
-
-.post-type-archive-avs_workshop .map:before {
-    content: "";
-    width: 30%;
-    max-width: 400px;
-    height: auto;
-    aspect-ratio: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border: 1px solid var(--mercury);
-    border-radius: 0 30px 0 10px;
-    transform: translateX(-33%);
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 992px) {
     .post-type-archive-avs_workshop .map:before {
-        top: var(--header-height);
-        right: -1rem;
-        left: unset;
-        transform: rotate(-180deg);
+        content: "";
+        width: 30%;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border: 1px solid var(--mercury);
+        border-radius: 0 30px 0 10px;
+        transform: translateX(-33%);
     }
 }
 

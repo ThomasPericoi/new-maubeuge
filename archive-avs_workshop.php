@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <!-- Hero -->
-<section id="hero-<?php echo uniqid(); ?>" class="hero hero-simple">
+<section id="hero-<?php echo uniqid(); ?>" class="hero hero-simple hero-mobile-decorated">
     <div class="container">
-        <div class="breadcrumbs">
+        <div class="breadcrumbs"> 
             <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
         </div>
         <div class="h4-size parent-title"><?php echo __("Les ateliers"); ?></div>
@@ -12,7 +12,7 @@
 </section>
 
 <!-- Map -->
-<section id="map-<?php echo uniqid(); ?>" class="map">
+<section id="map-<?php echo uniqid(); ?>" class="map"> 
     <?php if (have_rows('workshops_numbers', 'options')) : ?>
         <div class="container container-sm">
             <div class="numbers-grid">

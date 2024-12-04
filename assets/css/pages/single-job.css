@@ -1,6 +1,20 @@
 /* #Single Job
 --------------------------------------------------------------- */
 /* Hero */
+.single-avs_job .hero:before {
+  content: "";
+  width: 15%;
+  min-width: 150px;
+  height: auto;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 10rem;
+  left: -1rem;
+  border-radius: 0 30px 0 10px;
+  border: 1px solid var(--mercury);
+  z-index: -1;
+}
+
 .single-avs_job .parent-title {
   color: var(--color-theme);
 }
@@ -33,7 +47,7 @@
   border-radius: 0 70px 0 0;
 }
 
-.single-avs_job .row-2-columns:not(:nth-child(2)) + section {
+.single-avs_job .row-2-columns:not(:nth-child(2))+section {
   position: relative;
   z-index: -2;
 }

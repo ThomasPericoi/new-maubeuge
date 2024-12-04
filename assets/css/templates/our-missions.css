@@ -2,26 +2,22 @@
 --------------------------------------------------------------- */
 /* Hero */
 .page-template-our-missions-template .row-2-columns-large {
-    position: unset;
+    position: relative;
 }
 
-.page-template-our-missions-template .row-2-columns-large:before {
-    content: "";
-    width: 25%;
-    min-width: 150px;
-    height: auto;
-    aspect-ratio: 1;
-    position: absolute;
-    top: 0;
-    right: -1rem;
-    border-radius: 0 10px 0 30px;
-    border: 1px solid var(--mercury);
-    z-index: -1;
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 992px) {
     .page-template-our-missions-template .row-2-columns-large:before {
-        top: var(--header-height);
+        content: "";
+        width: 25%;
+        min-width: 150px;
+        height: auto;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 0;
+        right: -1rem;
+        border-radius: 0 10px 0 30px;
+        border: 1px solid var(--mercury);
+        z-index: -1;
     }
 }
 

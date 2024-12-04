@@ -1,23 +1,18 @@
 /* #Single Workshop
 --------------------------------------------------------------- */
-.single-avs_workshop:before {
-    content: "";
-    width: 15%;
-    min-width: 150px;
-    height: auto;
-    aspect-ratio: 1;
-    position: absolute;
-    top: 0;
-    right: -1rem;
-    border-radius: 0 10px 0 30px;
-    border: 1px solid var(--mercury);
-    z-index: -1;
-}
-
-@media screen and (max-width: 991px) {
-    .single-avs_workshop:before {
-        width: 25%;
-        top: var(--header-height);
+@media screen and (min-width: 992px) {
+    .single-avs_workshop .hero:before {
+        content: "";
+        width: 10%;
+        min-width: 150px;
+        height: auto;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 0;
+        right: -1rem;
+        border-radius: 0 10px 0 30px;
+        border: 1px solid var(--mercury);
+        z-index: -1;
     }
 }
 

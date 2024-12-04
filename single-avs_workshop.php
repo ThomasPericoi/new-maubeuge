@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Hero -->
-<section id="hero-<?php echo uniqid(); ?>" class="hero hero-simple">
+<section id="hero-<?php echo uniqid(); ?>" class="hero hero-simple hero-mobile-decorated">
     <div class="container">
         <div class="breadcrumbs">
             <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
