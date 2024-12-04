@@ -259,18 +259,17 @@
                     "label": "Lien du bouton",
                     "name": "link",
                     "aria-label": "",
-                    "type": "url",
+                    "type": "link",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "return_format": "url",
                     "allow_in_bindings": 1,
-                    "placeholder": "",
                     "parent_repeater": "field_6735ffb7df410"
                 }
             ]
@@ -407,5 +406,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1731595740
+    "modified": 1733322333
 }

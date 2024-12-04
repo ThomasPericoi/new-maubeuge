@@ -800,7 +800,7 @@
                             "name": "insight",
                             "aria-label": "",
                             "type": "textarea",
-                            "instructions": "Les sauts à la ligne sont pris en compte.",
+                            "instructions": "Les sauts à la ligne sont pris en compte. Les guillemets sont ajoutés automatiquement.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -811,7 +811,7 @@
                             "default_value": "",
                             "maxlength": "",
                             "allow_in_bindings": 0,
-                            "rows": "",
+                            "rows": 5,
                             "placeholder": "",
                             "new_lines": ""
                         },
@@ -874,7 +874,6 @@
                         "id": ""
                     },
                     "layout": "block",
-                    "parent_repeater": "field_672345def2166",
                     "sub_fields": [
                         {
                             "key": "field_6723480439f14",
@@ -908,7 +907,7 @@
                             "name": "insight",
                             "aria-label": "",
                             "type": "textarea",
-                            "instructions": "Les sauts à la ligne sont pris en compte.",
+                            "instructions": "Les sauts à la ligne sont pris en compte. Les guillemets sont ajoutés automatiquement.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -919,7 +918,7 @@
                             "default_value": "",
                             "maxlength": "",
                             "allow_in_bindings": 0,
-                            "rows": "",
+                            "rows": 5,
                             "placeholder": "",
                             "new_lines": ""
                         },
@@ -965,7 +964,8 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ]
+                    ],
+                    "parent_repeater": "field_672345def2166"
                 }
             ]
         },
@@ -1215,5 +1215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1731577653
+    "modified": 1733325360
 }

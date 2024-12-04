@@ -7,7 +7,7 @@
         <?php if ($args['insights']) : ?>
             <div class="insights">
                 <?php foreach ($args['insights'] as $insight) : ?>
-                    <div class="element insight" tabindex="0">
+                    <div class="element insight">
                         <div class="insight-inner">
                             <?php if ($insight['worker']) : ?>
                                 <div class="face worker" style="background-image: url('<?php echo $insight["worker"]["portrait"]; ?>');">
@@ -16,9 +16,9 @@
                                         <div class="name"><?php echo $insight["worker"]["name"]; ?></div>
                                         <div class="job"><?php echo $insight["worker"]["job"]; ?></div>
                                     </div>
-                                    <div class="flip-icon">
+                                    <button class="flip-icon">
                                         <?php get_template_part('assets/icons/arrow-back.svg'); ?>
-                                    </div>
+                                    </button>
                                 </div>
                             <?php endif; ?>
                             <?php if ($insight['supervisor']) : ?>
@@ -28,9 +28,9 @@
                                         <div class="name"><?php echo $insight["supervisor"]["name"]; ?></div>
                                         <div class="job"><?php echo $insight["supervisor"]["job"]; ?></div>
                                     </div>
-                                    <div class="flip-icon">
+                                    <button class="flip-icon">
                                         <?php get_template_part('assets/icons/arrow-back.svg'); ?>
-                                    </div>
+                                    </button>
                                 </div>
                             <?php endif; ?>
                         </div>

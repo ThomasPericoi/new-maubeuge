@@ -142,6 +142,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Template Part - Insight List
+  document.querySelectorAll(".insights-list .insight button").forEach((button, index) => {
+    button.addEventListener("click", function () {
+      button.closest(".insight").classList.toggle("active");
+    });
+
+    button.addEventListener("keypress", function (e) {
+      if (e.key === "Enter" || e.keyCode === 13) {
+        button.closest(".insight").classList.toggle("active");
+      }
+    });
+  });
+
   // Template Part - Jobs Tabs
   function show_content(index) {
     document.querySelector(".jobs-tabs .job-tab-content.visible") &&

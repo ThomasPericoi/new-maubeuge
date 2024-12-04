@@ -291,7 +291,7 @@
                             "name": "insight",
                             "aria-label": "",
                             "type": "textarea",
-                            "instructions": "Les sauts à la ligne sont pris en compte.",
+                            "instructions": "Les sauts à la ligne sont pris en compte. Les guillemets sont ajoutés automatiquement.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -302,7 +302,7 @@
                             "default_value": "",
                             "maxlength": "",
                             "allow_in_bindings": 0,
-                            "rows": "",
+                            "rows": 5,
                             "placeholder": "",
                             "new_lines": ""
                         },
@@ -399,7 +399,7 @@
                             "name": "insight",
                             "aria-label": "",
                             "type": "textarea",
-                            "instructions": "Les sauts à la ligne sont pris en compte.",
+                            "instructions": "Les sauts à la ligne sont pris en compte. Les guillemets sont ajoutés automatiquement.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -410,7 +410,7 @@
                             "default_value": "",
                             "maxlength": "",
                             "allow_in_bindings": 0,
-                            "rows": "",
+                            "rows": 5,
                             "placeholder": "",
                             "new_lines": ""
                         },
@@ -592,5 +592,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1731592141
+    "modified": 1733325403
 }
