@@ -9,7 +9,7 @@
                 <?php foreach ($args["cards"] as $key => $card) : ?>
                     <div class="col card">
                         <?php if ($card['image']) : ?>
-                            <img src="<?php echo $card["image"]["url"]; ?>" alt="<?php echo $card["image"]["title"]; ?>">
+                            <div class="thumbnail" style="background-image: url('<?php echo $card["image"]["url"]; ?>"></div>
                         <?php endif; ?>
                         <div class="content">
                             <?php if ($card['title']) : ?>

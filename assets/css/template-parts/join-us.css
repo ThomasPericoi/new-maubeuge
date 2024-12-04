@@ -13,10 +13,13 @@
   align-items: flex-start;
 }
 
-.join-us .card img {
+.join-us .card .thumbnail {
   width: 100%;
   height: auto;
-  display: block;
+  aspect-ratio: 1.35;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: var(--border-radius);
 }
 

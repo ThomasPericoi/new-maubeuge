@@ -23,16 +23,16 @@
     }
 }
 
-.row-2-columns .formatted>ul {
+body:not(.single-avs_job) .row-2-columns .formatted>ul {
     gap: 1.5rem;
 }
 
-.row-2-columns .formatted>ul>li {
+body:not(.single-avs_job) .row-2-columns .formatted>ul>li {
     padding: 0;
     align-items: center;
 }
 
-.row-2-columns .formatted>ul>li:before {
+body:not(.single-avs_job) .row-2-columns .formatted>ul>li:before {
     content: url("../../icons/check.svg");
     width: 30px;
     height: 26px;

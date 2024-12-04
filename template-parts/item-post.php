@@ -1,7 +1,6 @@
 <a href="<?php echo get_the_permalink(); ?>" class="element post">
     <?php if (has_post_thumbnail()) : ?>
-        <div class="image">
-            <?php the_post_thumbnail(); ?>
+        <div class="thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
         </div>
     <?php endif; ?>
     <div class="content">

@@ -18,26 +18,23 @@
     }
 }
 
-.posts-grid .post .image,
-.posts-list .post .image {
-    max-width: unset;
+.posts-grid .post .thumbnail,
+.posts-list .post .thumbnail {
     width: 100%;
+    height: auto;
+    aspect-ratio: 1.35;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
 }
 
 @media screen and (min-width: 768px) {
 
-    .posts-grid .post .image,
-    .posts-list .post .image {
+    .posts-grid .post .thumbnail,
+    .posts-list .post .thumbnail {
         max-width: 375px;
     }
-}
-
-.posts-grid .post .image img,
-.posts-list .post .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
 }
 
 .posts-grid .post .content,
