@@ -1,6 +1,12 @@
 /* #Our Story
 --------------------------------------------------------------- */
 /* Hero */
+@media screen and (max-width: 991px) {
+    .page-template-our-story-template .row-2-columns-large {
+        position: unset;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .page-template-our-story-template .row-2-columns-large {
         margin: 0 0 calc(var(--spacing-section-outer) * -1 - 30px) 0 !important;
@@ -19,6 +25,15 @@
     border-radius: 30px 0 10px 0;
     border: 1px solid var(--mercury);
     z-index: -1;
+}
+
+@media screen and (max-width: 991px) {
+    .page-template-our-story-template .row-2-columns-large:before {
+        top: var(--header-height);
+        right: -1rem;
+        left: unset;
+        transform: rotate(-90deg);
+    }
 }
 
 /* Dates */

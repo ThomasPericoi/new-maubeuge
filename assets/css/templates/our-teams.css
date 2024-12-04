@@ -1,6 +1,12 @@
 /* #Our Teams
 --------------------------------------------------------------- */
 /* Hero */
+@media screen and (max-width: 991px) {
+    .page-template-our-teams-template .row-2-columns-large {
+        position: unset;
+    }
+}
+
 .page-template-our-teams-template .row-2-columns-large:before {
     content: "";
     width: 25%;
@@ -13,6 +19,12 @@
     border-radius: 0 10px 0 30px;
     border: 1px solid var(--mercury);
     z-index: -1;
+}
+
+@media screen and (max-width: 991px) {
+    .page-template-our-teams-template .row-2-columns-large:before {
+        top: var(--header-height);
+    }
 }
 
 /* Workers*/

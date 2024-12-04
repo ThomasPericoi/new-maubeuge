@@ -5,6 +5,12 @@
     margin: var(--spacing-section-outer) 0;
 }
 
+@media screen and (max-width: 991px) {
+    .row-2-columns-regular .cols-wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
 /* Content */
 .row-2-columns .formatted {
     gap: 1.5rem;
