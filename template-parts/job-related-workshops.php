@@ -15,7 +15,7 @@
             <div class="swiper-wrapper">
                 <?php foreach ($workshops as $post) :
                     setup_postdata($post); ?>
-                    <div class="workshop swiper-slide">
+                    <a href="<?php echo get_the_permalink(); ?>" class="workshop swiper-slide">
                         <div class="image-wrapper">
                             <div class="thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
                             </div>
@@ -27,7 +27,7 @@
                                 <div><?php echo get_the_excerpt(); ?></div>
                             <?php endif; ?>
                         </div>
-                    </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </div>

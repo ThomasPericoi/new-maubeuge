@@ -10,6 +10,7 @@
 }
 
 .job-related-workshops .workshops-list .workshop {
+  text-decoration: none;
   border: 1px solid var(--mercury);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -35,6 +36,6 @@
   font-family: var(--bold);
 }
 
-.job-related-workshops .workshops-list .workshop h3 + div {
+.job-related-workshops .workshops-list .workshop h3+div {
   margin-top: 1rem;
 }
