@@ -6,6 +6,7 @@
 }
 
 .home-hero-slider .slider-element {
+    min-height: 80vh;
     padding: var(--spacing-section-outer) 0;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
 
 @media screen and (min-width: 1200px) {
     .home-hero-slider .slider-element {
-        min-height: 550px;
+        min-height: 600px;
     }
 }
 

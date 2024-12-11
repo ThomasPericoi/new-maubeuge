@@ -1,6 +1,6 @@
 <!-- Latest Posts  -->
 <?php $latest = get_posts(array(
-    'numberposts' => $args['amount'],
+    'numberposts' => wp_is_mobile() ? 3 : $args['amount'],
     'post__not_in' => array($post->ID)
 )); ?>
 

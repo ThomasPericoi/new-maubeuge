@@ -7,35 +7,41 @@
     background-color: var(--selago);
 }
 
-.home-numbers h1 + p {
+.home-numbers h1+p {
     margin-top: 5px;
 }
 
-.home-numbers .numbers-grid {
+.home-numbers .numbers-grid>div {
     margin-top: var(--spacing-title);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
-    justify-content: center;
 }
 
 @media screen and (min-width: 992px) {
-    .home-numbers .numbers-grid {
+    .home-numbers .numbers-grid>div {
+        display: flex;
         flex-direction: row;
+        gap: 1rem;
+        align-items: stretch;
+        justify-content: center;
     }
 }
 
 .home-numbers .numbers-grid .element {
     width: 100%;
+    height: auto;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: var(--border-radius);
     background-color: var(--white);
     box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+    .home-numbers .numbers-grid .element {
+        flex-shrink: unset;
+    }
 }
 
 .home-numbers .numbers-grid .element img {

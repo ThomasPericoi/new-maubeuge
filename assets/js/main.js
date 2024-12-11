@@ -191,29 +191,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Template Part - Partners Grid
-  var init = false;
-  var swiperPartners;
-  function initSwiperPartners() {
-    if (window.innerWidth <= 767) {
-      if (!init) {
-        init = true;
-        swiperPartners = new Swiper(".logos-wrapper.swiper", {
-          loop: true,
-          slidesPerView: "auto",
-          spaceBetween: 40,
-          autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-          },
-        });
+  if (document.querySelector(".logos-wrapper")) {
+    var init = false;
+    var swiperPartners;
+    function initSwiperPartners() {
+      if (window.innerWidth <= 767) {
+        if (!init) {
+          init = true;
+          swiperPartners = new Swiper(".logos-wrapper.swiper", {
+            loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 40,
+            autoplay: {
+              delay: 1500,
+              disableOnInteraction: false,
+            },
+          });
+        }
+      } else if (init) {
+        swiperPartners.destroy();
+        init = false;
       }
-    } else if (init) {
-      swiperPartners.destroy();
-      init = false;
     }
+    initSwiperPartners();
+    window.addEventListener("resize", initSwiperPartners);
   }
-  initSwiperPartners();
-  window.addEventListener("resize", initSwiperPartners);
 
   // Template Part - Testimonials Slider
   const swiperTestimonials = new Swiper(
@@ -243,7 +245,12 @@ document.addEventListener("DOMContentLoaded", function () {
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(contactMap);
 
-    L.marker([50.252131, 3.906879]).addTo(contactMap);
+    var redPointer = L.icon({
+      iconUrl: '../wp-content/themes/new-maubeuge/assets/icons/pointer-red.svg',
+      iconSize: [40, 61],
+    });
+
+    L.marker([50.252131, 3.906879], { icon: redPointer }).addTo(contactMap);
   }
 
   // Page - Job
@@ -280,8 +287,29 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  if (document.querySelector(".home-numbers")) {
+    var init = false;
+    var swiperHomeNumbers;
+    function initSwiperHomeNumbers() {
+      if (window.innerWidth <= 991) {
+        if (!init) {
+          swiperHomeNumbers = new Swiper(".home-numbers .numbers-grid.swiper", {
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+          });
+          init = true;
+        }
+      } else if (init) {
+        swiperHomeNumbers.destroy();
+        init = false;
+      }
+    }
+    initSwiperHomeNumbers();
+    window.addEventListener("resize", initSwiperHomeNumbers);
+  }
+
   if (document.querySelector("#homepage-map")) {
-    const homepageMap = L.map("homepage-map").setView([50.2558, 3.9314], 12);
+    const homepageMap = L.map("homepage-map", { zoomControl: false, scrollWheelZoom: false }).setView([50.2558, 3.9314], 12);
     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -305,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Page - Workshops
   if (document.querySelector("#archive-workshops-map")) {
-    const archiveWorkshopsMap = L.map("archive-workshops-map").setView(
+    const archiveWorkshopsMap = L.map("archive-workshops-map", { zoomControl: false, scrollWheelZoom: false }).setView(
       [50.2558, 3.9314],
       12
     );

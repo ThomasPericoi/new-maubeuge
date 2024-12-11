@@ -45,7 +45,6 @@ body.js-menuOpened {
     gap: 1.5rem;
     background-color: var(--white);
     transform: translateX(100%);
-    overflow-y: auto;
     box-sizing: border-box;
     transition: transform ease 350ms;
 }
@@ -78,10 +77,11 @@ body.js-menuOpened {
 .menu-header {
     display: flex;
     align-items: stretch;
-    justify-content: flex-end;
     gap: 2rem;
     flex-direction: column;
     background-color: unset;
+    overflow-x: hidden;
+    overflow-y: auto;
     transition: opacity ease 350ms;
 }
 
@@ -116,8 +116,12 @@ body.js-menuOpened {
 
 .menu-header li a:hover,
 .menu-header li a:focus,
-.menu-header li.menu-item-has-children:hover > a {
+.menu-header li.menu-item-has-children:hover>a {
     color: var(--secondary);
+}
+
+.menu-header li.menu-item-has-children>a:focus {
+    pointer-events: none;
 }
 
 .menu-header li.menu-item-has-children>a:after {
@@ -133,7 +137,7 @@ body.js-menuOpened {
 
 .menu-header li.menu-item-has-children>a:hover:after,
 .menu-header li.menu-item-has-children>a:focus:after,
-.menu-header li.menu-item-has-children:hover > a:after {
+.menu-header li.menu-item-has-children:hover>a:after {
     transform: rotate(90deg);
     filter: brightness(0) saturate(100%) invert(45%) sepia(94%) saturate(359%) hue-rotate(65deg) brightness(95%) contrast(87%);
 }
@@ -237,7 +241,17 @@ body.js-menuOpened {
     height: 2px;
     position: absolute;
     display: block;
+    background-color: var(--primary);
+}
+
+.js-menuOpened .menu-toggle-open>span,
+.js-menuOpened .menu-toggle-open>span:before,
+.js-menuOpened .menu-toggle-open>span:after {
     background-color: var(--secondary);
+}
+
+.js-menuOpened .menu-toggle-open>span {
+    background-color: var(--white);
 }
 
 .menu-toggle-open>span:before,
@@ -252,10 +266,22 @@ body.js-menuOpened {
     transition: width ease 350ms;
 }
 
+.js-menuOpened .menu-toggle-wrapper .menu-toggle-open>span:before {
+    width: 36px !important;
+    transform: rotate(-45deg);
+    transform-origin: right;
+}
+
 .menu-toggle-open>span:after {
     content: "";
     margin-top: 13px;
     transition: width ease 350ms 90ms;
+}
+
+.js-menuOpened .menu-toggle-wrapper .menu-toggle-open>span:after {
+    width: 36px !important;
+    transform: rotate(45deg);
+    transform-origin: right;
 }
 
 .menu-toggle-wrapper:hover .menu-toggle-open>span:before,
