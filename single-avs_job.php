@@ -24,7 +24,14 @@
                     <?php endif; ?>
                 </div>
                 <div id="job-form" class="col">
-                    <p># TO DO : Formulaire</p>
+                    <?php if (get_field("introduction_form_title")) : ?>
+                        <h2 class="h3-size"><?php echo get_field("introduction_form_title"); ?></h2>
+                    <?php endif; ?>
+                    <?php if (get_field("introduction_form_subtitle")) : ?>
+                        <p><?php echo get_field("introduction_form_subtitle"); ?></p>
+                    <?php endif; ?>
+                    <?php $shortcode_contact = '[contact-form-7 id="' . get_field("introduction_form_shortcode") . '"]';
+                    echo do_shortcode($shortcode_contact); ?>
                 </div>
             </div>
         </div>
@@ -69,5 +76,26 @@
 )); ?>
 
 <?php get_template_part('template-parts/job-related-workshops'); ?>
+
+<!-- Sticky Form -->
+<div class="sticky-form">
+    <button id="openJobFormModal" class="btn btn-secondary"><?php echo __("Envie d'en savoir plus ?", "new-maubeuge"); ?></button>
+</div>
+
+<div id="jobFormModal" class="modal">
+    <div class="container modal-content">
+        <button id="closeJobFormModal">
+            <?php get_template_part('assets/icons/close.svg'); ?>
+        </button>
+        <?php if (get_field("introduction_form_title")) : ?>
+            <h2 class="h3-size"><?php echo get_field("introduction_form_title"); ?></h2>
+        <?php endif; ?>
+        <?php if (get_field("introduction_form_subtitle")) : ?>
+            <p><?php echo get_field("introduction_form_subtitle"); ?></p>
+        <?php endif; ?>
+        <?php $shortcode_contact = '[contact-form-7 id="' . get_field("introduction_form_shortcode") . '"]';
+        echo do_shortcode($shortcode_contact); ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>

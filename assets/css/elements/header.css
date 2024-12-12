@@ -58,7 +58,6 @@ body.js-menuOpened {
         right: unset;
         flex-direction: row;
         align-items: center;
-        overflow-y: unset;
         transform: translateX(0);
     }
 }
@@ -89,6 +88,8 @@ body.js-menuOpened {
     .menu-header {
         flex-direction: row;
         align-items: center;
+        justify-content: flex-end;
+        overflow: unset;
     }
 }
 
@@ -118,10 +119,6 @@ body.js-menuOpened {
 .menu-header li a:focus,
 .menu-header li.menu-item-has-children:hover>a {
     color: var(--secondary);
-}
-
-.menu-header li.menu-item-has-children>a:focus {
-    pointer-events: none;
 }
 
 .menu-header li.menu-item-has-children>a:after {

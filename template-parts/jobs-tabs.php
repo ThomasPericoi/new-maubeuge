@@ -21,7 +21,7 @@ $jobs = get_posts(array(
                 <?php foreach ($jobs as $post) :
                     setup_postdata($post); ?>
 
-                    <button class="job-tab-button" style="--color-theme:<?php echo get_field("block_color"); ?>"><img class="icon" src="<?php echo get_field("block_picto")["url"]; ?>" alt="<?php echo get_field("block_picto")["title"]; ?>"><?php echo get_the_title(); ?></button>
+                    <button class="job-tab-button" style="--color-theme:<?php echo get_field("block_color"); ?>"><img class="icon" src="<?php echo get_field("block_picto")["url"]; ?>" alt="<?php echo get_field("block_picto")["title"]; ?>"><span><?php echo get_the_title(); ?></span></button>
 
                     <div class="job-tab-content" style="--color-theme:<?php echo get_field("block_color"); ?>">
                         <div class="col">

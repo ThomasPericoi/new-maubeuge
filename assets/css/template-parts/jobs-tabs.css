@@ -42,7 +42,7 @@
     align-items: center;
     font-size: 14px;
     font-family: var(--body);
-    color: var(--color-theme);
+    font-weight: 500;
     background: none;
     border: 0;
     opacity: 0.35;
@@ -53,6 +53,8 @@
 @media screen and (min-width: 992px) {
     .jobs-tabs .job-tab-button {
         order: -1;
+        font-weight: 400;
+        color: var(--color-theme);
     }
 
     .jobs-tabs.normal .job-tab-button {
@@ -86,6 +88,10 @@
     .jobs-tabs .col .icon {
         display: block;
     }
+}
+
+.jobs-tabs .job-tab-button span {
+    width: 100%;
 }
 
 /* Content */

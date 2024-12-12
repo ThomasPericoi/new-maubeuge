@@ -235,6 +235,69 @@
             "delay": 1
         },
         {
+            "key": "field_675aafb78faac",
+            "label": "Titre du formulaire",
+            "name": "introduction_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_675aafec8faad",
+            "label": "Sous-titre du formulaire",
+            "name": "introduction_form_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6759c19f6e2d9",
+            "label": "ID du formulaire",
+            "name": "introduction_form_shortcode",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Le formulaire peut être modifié dans l'onglet Contact du site.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_671a4fe3b78ae",
             "label": "2) Rangée avec 2 colonnes \"Les services\"",
             "name": "",
@@ -1215,5 +1278,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1733325360
+    "modified": 1733996604
 }

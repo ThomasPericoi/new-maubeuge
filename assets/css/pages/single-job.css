@@ -33,6 +33,70 @@
   text-align: left;
 }
 
+.single-avs_job .container {
+  position: relative;
+}
+
+.single-avs_job .introduction .cols-wrapper .col:nth-child(2) {
+  padding: 2rem;
+  display: none;
+  visibility: hidden;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--mercury);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+  .single-avs_job .introduction .cols-wrapper .col:nth-child(2) {
+    max-width: calc(50% - var(--spacing-section-inner));
+    position: absolute;
+    right: 2em;
+    bottom: 0;
+    display: flex;
+    visibility: unset;
+    background-color: var(--white);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .single-avs_job .introduction .cols-wrapper .col:nth-child(2) {
+    max-width: 550px;
+  }
+}
+
+.single-avs_job .introduction .wpcf7-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.single-avs_job .introduction .wpcf7-list-item {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .single-avs_job .introduction label:nth-child(2),
+  .single-avs_job .introduction label:nth-child(3) {
+    width: calc(50% - 12px);
+  }
+}
+
+.single-avs_job .introduction form .btn {
+  width: 100%;
+}
+
+.single-avs_job .introduction form .wpcf7-spinner {
+  display: none;
+}
+
+.single-avs_job .introduction form.submitting .wpcf7-spinner {
+  display: block;
+}
+
 /* Teams */
 .single-avs_job .row-2-columns:not(:nth-child(2)):before {
   content: "";
@@ -50,4 +114,78 @@
 .single-avs_job .row-2-columns:not(:nth-child(2))+section {
   position: relative;
   z-index: -2;
+}
+
+/* Sticky Form */
+.single-avs_job .sticky-form {
+  padding: 2em;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-color: var(--white);
+  border-radius: 1.5em 1.5rem 0 0;
+  border: 1px solid var(--mercury);
+}
+
+@media screen and (min-width: 992px) {
+  .single-avs_job .sticky-form {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* Modal */
+#jobFormModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation-name: fadeIn;
+  animation-duration: 350ms;
+  overflow: auto;
+  visibility: hidden;
+}
+
+#jobFormModal .modal-content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: var(--header-height);
+  left: 0;
+  background-color: var(--white);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+#jobFormModal #closeJobFormModal {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#jobFormModal .modal-content .wpcf7-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#jobFormModal .modal-content .wpcf7-form .wpcf7-list-item {
+  margin-left: 0;
 }

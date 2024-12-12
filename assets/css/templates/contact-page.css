@@ -13,6 +13,24 @@
     margin-bottom: var(--spacing-title);
 }
 
+.page-template-contact-page-template .form .wpcf7-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.page-template-contact-page-template .form .wpcf7-list-item {
+    margin-left: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .page-template-contact-page-template .form form label:nth-child(2),
+    .page-template-contact-page-template .form form label:nth-child(3) {
+        width: calc(50% - 12px);
+    }
+}
+
 /* Informations */
 .page-template-contact-page-template #contact-map {
     margin-bottom: 2rem;
@@ -20,7 +38,7 @@
     border-radius: var(--border-radius);
 }
 
-.page-template-contact-page-template .informations {
+.page-template-contact-page-template main .informations {
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -29,19 +47,19 @@
     border-radius: var(--border-radius);
 }
 
-.page-template-contact-page-template .informations>div {
+.page-template-contact-page-template main .informations>div {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.page-template-contact-page-template .informations>div svg {
+.page-template-contact-page-template main .informations>div svg {
     width: 100%;
     max-width: 32px;
     height: auto;
 }
 
-.page-template-contact-page-template .informations>div a {
+.page-template-contact-page-template main .informations>div a {
     text-decoration: none;
     color: var(--primary);
 }

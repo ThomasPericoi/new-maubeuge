@@ -228,7 +228,6 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -269,6 +268,32 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  if (document.querySelector(".single-avs_job")) {
+    const modal = document.getElementById("jobFormModal");
+    const openButton = document.getElementById("openJobFormModal");
+    const closeButton = document.getElementById("closeJobFormModal");
+
+    function openModal() {
+      modal.style.display = "block";
+      modal.style.visibility = "unset";
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+      modal.style.visibility = "hidden";
+      document.body.style.overflow = "initial";
+    }
+
+    openButton.addEventListener('click', function () {
+      openModal();
+    });
+
+    closeButton.addEventListener('click', function () {
+      closeModal();
+    });
+  }
+
   // Page - Page d'accueil
   const swiperHero = new Swiper(".home-hero-slider", {
     loop: true,
@@ -294,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (window.innerWidth <= 991) {
         if (!init) {
           swiperHomeNumbers = new Swiper(".home-numbers .numbers-grid.swiper", {
-            slidesPerView: 1.5,
+            slidesPerView: 1.33,
             spaceBetween: 16,
           });
           init = true;

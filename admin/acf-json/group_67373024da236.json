@@ -42,6 +42,27 @@
             "append": ""
         },
         {
+            "key": "field_6759aaff065b7",
+            "label": "ID du formulaire",
+            "name": "contact_form_shortcode",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Le formulaire peut être modifié dans l'onglet Contact du site.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_673753ba510ee",
             "label": "Informations de contact",
             "name": "",
@@ -140,5 +161,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1731685068
+    "modified": 1733935521
 }
