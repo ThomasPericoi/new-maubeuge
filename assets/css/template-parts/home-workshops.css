@@ -11,9 +11,136 @@
     text-align: center;
 }
 
+/* Map */
 .home-workshops .map-wrapper {
-    width: 100%;
-    min-height: 615px;
     margin-top: var(--spacing-section-inner);
     margin-bottom: 1rem;
+    position: relative;
+}
+
+.home-workshops #homepage-map {
+    width: 100%;
+    min-height: 400px;
+    z-index: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .home-workshops #homepage-map {
+        min-height: 650px;
+    }
+}
+
+/* Popups */
+.home-workshops .workshop {
+    z-index: 1;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    display: none;
+    visibility: none;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    animation-name: fadeIn;
+    animation-duration: 350ms;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.home-workshops .workshop.active {
+    display: flex;
+    visibility: unset;
+}
+
+@media screen and (min-width: 992px) {
+    .home-workshops .workshop {
+        max-width: 380px;
+        width: 100%;
+        top: 2rem;
+        right: 2rem;
+        bottom: 2rem;
+        left: unset;
+    }
+}
+
+.home-workshops .workshop .thumbnail {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-workshops .workshop .thumbnail .close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home-workshops .workshop .thumbnail .close svg {
+    width: 10px;
+    height: 10px;
+}
+
+.home-workshops .workshop .content {
+    padding: 2rem 2rem 0 2rem;
+    position: relative;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.home-workshops .workshop .picto {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.home-workshops .workshop .city {
+    font-size: 12px;
+}
+
+.home-workshops .workshop .city:before {
+    content: "";
+    width: 10px;
+    height: 15px;
+    margin-right: 4px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/pointer-grey.svg");
+}
+
+.home-workshops .workshop p {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .home-workshops .workshop p {
+        display: block;
+    }
+}
+
+.home-workshops .workshop .btn {
+    width: unset;
+    margin: 0.5rem 2rem 2rem 2rem;
 }

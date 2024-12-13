@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_671651fbcae06",
-            "label": "Adresses de l'atelier",
+            "label": "Adresses de l'implantation",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -410,6 +410,88 @@
             "message": "Le contenu sous la présentation se remplit dans le champs sous le titre de la page.",
             "new_lines": "wpautop",
             "esc_html": 0
+        },
+        {
+            "key": "field_675af06a4628a",
+            "label": "Informations pour la carte de la page \"Nos implantations\"",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_675af540a29e7",
+            "label": "Consigne",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Pour trouver ces informations, il faut se rendre sur OpenStreetMap.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_675aefb146287",
+            "label": "Latitude de l'implantation",
+            "name": "latitude",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_675af01646288",
+            "label": "Longitude de l'implantation",
+            "name": "longitude",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -430,5 +512,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730054482
+    "modified": 1734084222
 }

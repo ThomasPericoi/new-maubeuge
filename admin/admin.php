@@ -35,8 +35,8 @@ add_action('init', 'register_custom_post_types');
 function register_custom_taxonomy() {}
 add_action('init', 'register_custom_taxonomy');
 
-// Sort Project Archive by date
-function sort_project_by_field($query)
+// Sort Projects Archive by date
+function sort_projects_by_field($query)
 {
     if ($query->is_post_type_archive('avs_project')) {
         $query->set('posts_per_page', '4');
@@ -45,7 +45,18 @@ function sort_project_by_field($query)
         $query->set('meta_key', 'date');
     }
 }
-add_action('pre_get_posts', 'sort_project_by_field');
+add_action('pre_get_posts', 'sort_projects_by_field');
+
+// Sort Workshops Archive by title
+function sort_workshops_by_title($query)
+{
+    if ($query->is_post_type_archive('avs_workshop')) {
+        $query->set('posts_per_page', '-1');
+        $query->set('order', 'ASC');
+        $query->set('orderby', 'title');
+    }
+}
+add_action('pre_get_posts', 'sort_workshops_by_title');
 
 /* BLOCK(S)
 --------------------------------------------------------------- */

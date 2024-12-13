@@ -46,7 +46,145 @@
 
 /* Map */
 .post-type-archive-avs_workshop .map-wrapper {
+    position: relative;
+}
+
+.post-type-archive-avs_workshop .map-wrapper #archive-workshops-map {
     width: 100%;
-    min-height: 750px;
+    min-height: 600px;
+    z-index: 0;
     border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 992px) {
+    .post-type-archive-avs_workshop .map-wrapper #archive-workshops-map {
+        min-height: 750px;
+    }
+}
+
+/* Workshops List */
+.post-type-archive-avs_workshop .workshops {
+    padding: 1.5rem;
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.post-type-archive-avs_workshop .workshops.condensed {
+    bottom: unset;
+}
+
+@media screen and (min-width: 992px) {
+    .post-type-archive-avs_workshop .workshops {
+        padding: 2rem;
+        min-width: 475px;
+        top: 2rem;
+        right: 60%;
+        bottom: 2rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .post-type-archive-avs_workshop .workshops h2 {
+        position: relative;
+        padding-right: 28px;
+        display: flex;
+        gap: 5px;
+    }
+
+    .post-type-archive-avs_workshop .workshops h2:after {
+        content: "";
+        width: 28px;
+        height: 28px;
+        display: block;
+        position: absolute;
+        top: calc(50% - 14px);
+        right: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../icons/chevron-right.svg");
+        transform: rotate(-90deg);
+        transition: transform ease 350ms;
+    }
+
+    .post-type-archive-avs_workshop .workshops.condensed h2:after {
+        transform: rotate(90deg);
+    }
+}
+
+.post-type-archive-avs_workshop .workshops-list {
+    margin-top: 1rem;
+    height: calc(100% - 3em);
+    display: flex;
+    visibility: unset;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.post-type-archive-avs_workshop .workshops.condensed .workshops-list {
+    display: none;
+    visibility: hidden;
+}
+
+.post-type-archive-avs_workshop .workshops-list>a {
+    padding: 1rem;
+    position: relative;
+    color: var(--primary);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    .post-type-archive-avs_workshop .workshops-list>a {
+        padding: 1rem 2rem;
+    }
+}
+
+.post-type-archive-avs_workshop .workshops-list>a:after {
+    content: "";
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/chevron-right.svg");
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(354%) hue-rotate(285deg) brightness(116%) contrast(82%);
+}
+
+.post-type-archive-avs_workshop .workshops-list>a span:before {
+    content: "";
+    width: 12px;
+    height: 18px;
+    margin-right: 4px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/pointer-grey.svg");
+}
+
+.post-type-archive-avs_workshop .workshops-list>a.hq span:before {
+    background-image: url("../../icons/pointer-red.svg");
+}
+
+.post-type-archive-avs_workshop .workshops-list>a .jobs-grid {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-type-archive-avs_workshop .workshops-list>a .jobs-grid img {
+    max-width: 24px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
