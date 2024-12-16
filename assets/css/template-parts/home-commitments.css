@@ -11,7 +11,8 @@
 
 .home-commitments .commitments-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     row-gap: 1.5rem;
     align-items: center;
     justify-content: center;
@@ -19,17 +20,22 @@
 
 @media screen and (min-width: 992px) {
     .home-commitments .commitments-grid {
-        flex-direction: row;
         align-items: flex-end;
     }
 }
 
 .home-commitments .commitments-grid .element {
-    width: 175px;
+    width: 155px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+    .home-commitments .commitments-grid .element {
+        width: 175px;
+    }
 }
 
 .home-commitments .commitments-grid .element img {

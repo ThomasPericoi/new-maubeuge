@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    .row-2-columns-regular .cols-wrapper {
+    .row-2-columns .cols-wrapper {
         flex-direction: column-reverse;
     }
 }

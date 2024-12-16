@@ -142,6 +142,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  if (window.innerWidth < 1200) {
+    document.querySelectorAll('.menu-item-has-children').forEach(item => {
+      item.querySelector(".sub-menu").setAttribute("aria-hidden", "true");
+      item.querySelector(".sub-menu").setAttribute("aria-expanded", "false");
+
+      item.addEventListener('click', (event) => {
+        document.querySelector('.menu-item-has-children.active') && document.querySelector('.menu-item-has-children.active').classList.remove('active');
+        document.querySelector('.menu-item-has-children.active') && document.querySelector('.menu-item-has-children.active').setAttribute("aria-hidden", "true");
+        document.querySelector('.menu-item-has-children.active') && document.querySelector('.menu-item-has-children.active').setAttribute("aria-expanded", "false");
+
+        item.classList.add('active');
+        item.querySelector(".sub-menu").setAttribute("aria-hidden", "false");
+        item.querySelector(".sub-menu").setAttribute("aria-expanded", "true");
+        skipStep = false;
+      });
+    });
+  }
+
   // Template Part - Insight List
   document.querySelectorAll(".insights-list .insight button").forEach((button, index) => {
     button.addEventListener("click", function () {
