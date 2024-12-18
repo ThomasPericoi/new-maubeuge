@@ -33,7 +33,7 @@ $args = [
     ],
     'taxonomies' => [],
     'has_archive' => false,
-    'rewrite' => ['slug' => 'nos-métiers', 'with_front' => true],
+    'rewrite' => ['slug' => 'nos-metiers', 'with_front' => true],
     'menu_position' => 20,
     'menu_icon' => 'dashicons-admin-tools',
 ];
